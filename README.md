@@ -11,15 +11,13 @@ sku: 102010048
 
 ![]()
 
-Seeed NPi-STM32MP157C是由Seeed Studio基于STM32MP157C微控制器的开源硬件开发板。Seeed NPi-STM32MP157C
-不仅能提供系统的所有源码来供用户学习使之变成arm开发板，而且还采用STPMIC1APQR电源管理芯片，做到了低功耗高效能，同时还支持CAN FD接口，所以在做工业级的设计时，Seeed NPi-STM32MP157C也能有一席之位。其大小与树莓派的大小类似，但麻雀虽小却五脏俱全，包括高性能灵活的 WiFi /蓝牙接口和两个 Grove 连接器，使其更容易连接到大型 Grove 传感器系列，支持MIPI DSI接口和CAN FD接口，同时也兼容树莓派的40-pin接口。
+Seeed NPi-STM32MP157C是由Seeed Studio基于STM32MP157C微控制器的开源硬件开发板。Seeed NPi-STM32MP157C不仅能提供系统的所有源码来供用户学习使之变成arm开发板，而且其大小与树莓派的大小类似，但麻雀虽小却五脏俱全，包括高性能灵活的 WiFi /蓝牙接口和两个 Grove 连接器，使其更容易连接到大型 Grove 传感器系列，支持MIPI DSI接口和CAN FD接口，同时也兼容树莓派的40-pin接口。
 
  [![](https://github.com/SeeedDocument/wiki_chinese/raw/master/docs/images/click_to_buy.PNG)](https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-11172317909.10.1e729b66GJVV3r&id=533937368398)
 
 ## 产品特性
 
-- 16位 1G RAM & 4GB eMMC
-- 低功耗 高性能
+- 16位 512M RAM & 4GB eMMC
 - USB OTG 可外接 USB 设备
 - 2.4G WiFi & BT 4.2 （可外接天线）
 - Grove 接口(一个IIC一个数字)
@@ -37,7 +35,7 @@ Seeed NPi-STM32MP157C是由Seeed Studio基于STM32MP157C微控制器的开源硬
 |项目|参数值|
 |----|------|
 |处理器|  STM32MP157C(Arm® Cortex®-A7 和 Cortex®-M4双架构处理器)|
-|内存|	1G DDR3|
+|内存|	512M DDR3|
 |板载闪存	|4GB eMMC|
 |CPU支持	| 3D 图形加速器和CAN FD协议和MIPI DSI显示|
 |USB支持 |供电与通信|
@@ -46,7 +44,6 @@ Seeed NPi-STM32MP157C是由Seeed Studio基于STM32MP157C微控制器的开源硬
 |GPIO	|40-PIN引脚|
 |以太网	|千兆级|
 |工作温度	|0 ~ 75 ℃|
-|功耗 | |
 
 ## 创意应用
 
@@ -71,25 +68,16 @@ Seeed NPi-STM32MP157C的40-PIN完全兼容树莓派的40PIN，包括GPIO,IIC,UAR
 
 #### GPIO
 
-GPIO（英语：General-purpose input/output），通用型之输入输出的简称，功能类似8051的P0—P3，其接脚可以供使用者由程控自由使用，PIN脚依现实考量可作为通用输入（GPI）或通用输出（GPO）或通用输入与输出（GPIO），如当clk generator, chip select等。下图是GPIO在PIN-MAP中的位置。
+GPIO，通用型之输入输出的简称，功能类似8051的P0—P3，其接脚可以供使用者由程控自由使用，PIN脚依现实考量可作为通用输入（GPI）或通用输出（GPO）或通用输入与输出（GPIO），如当clk generator, chip select等。下图是GPIO在PIN-MAP中的位置。
 
 !!!Note
     - 在GPIO模式下，每个数字I / O都可产生中断
 
 ![enter image description here]()
 
-#### PWM
-
-PWM是一种对模拟信号电平进行数字编码的方法。通过高分辨率计数器的使用，方波的占空比被调制用来对一个具体模拟信号的电平进行编码。常用在电机的控制。下图是在PIN-MAP中的位置
-
-!!!Note
-    - 多达4个数字 I / O 引脚可配置脉冲宽度调制器（PWM），以产生信号控制电机或创建伪模拟电压电平，而不占用任何额外的 CPU 周期。当TIM4_CH4在作PWM输出时，TIM4_CH3则不能用作PWM输出
-
-![]()
-
 #### UART
 
-通用异步收发传输器（Universal Asynchronous Receiver/Transmitter)，通常称作UART。它将要传输的资料在串行通信与并行通信之间加以转换。作为把并行输入信号转成串行输出信号的芯片，UART通常被集成于其他通讯接口的连结上。下图是UART在PIN-MAP中的位置。
+通用异步收发传输器，通常称作UART。它将要传输的资料在串行通信与并行通信之间加以转换。作为把并行输入信号转成串行输出信号的芯片，UART通常被集成于其他通讯接口的连结上。下图是UART在PIN-MAP中的位置。
 
 !!!Note
     - 有一个专用连接头用于连接 UART0 引脚并用于连接调试。 另外还有一个串行扩展连接端口。
@@ -99,7 +87,7 @@ PWM是一种对模拟信号电平进行数字编码的方法。通过高分辨�
 
 #### I2C
 
-I2C（Inter-Integrated Circuit）其实是IICBus简称，所以中文应该叫集成电路总线，它是一种串行通信总线，使用多主从架构。下图是I2C在PIN-MAP中的位置。
+I2C其实是IICBus简称，所以中文应该叫集成电路总线，它是一种串行通信总线，使用多主从架构。下图是I2C在PIN-MAP中的位置。
 
 !!!Note
      第一个 I2C 总线用于读取 Cape 附加板上的 EEPROMS ，不能用于其他数字 I / O 端口操作，而不会影响该功能，但您仍然可使用它在可用地址中添加其他 I2C 设备。 第二个 I2C 总线可供您配置和使用。
@@ -108,7 +96,7 @@ I2C（Inter-Integrated Circuit）其实是IICBus简称，所以中文应该叫�
 
 #### SPI
 
-SPI是串行外设接口（Serial Peripheral Interface）的缩写，是一种高速的，全双工，同步的通信总线，并且在芯片的管脚上只占用四根线，节约了芯片的管脚，同时为PCB的布局上节省空间，提供方便，正是出于这种简单易用的特性，越来越多的芯片集成了这种通信协议。下图是SPI在PIN-MAP中的位置。
+SPI是串行外设接口的缩写，是一种高速的，全双工，同步的通信总线，并且在芯片的管脚上只占用四根线，节约了芯片的管脚，同时为PCB的布局上节省空间，提供方便，正是出于这种简单易用的特性，越来越多的芯片集成了这种通信协议。下图是SPI在PIN-MAP中的位置。
 
 !!!Note
     为了快速移出数据，您可以考虑使用其中一个 SPI 端口。
@@ -247,7 +235,7 @@ Connected wifi_e8de27077de3_41483034303434393134_managed_psk
 connmanctl> quit
 ```
 
-现在使用下面的命令找到 Seeed NPi-STM32MP157C  的 IP 地址。
+现在使用下面的命令找到 Seeed NPi-STM32MP157C 的 IP 地址。
 
 ```
 ifconfig
@@ -261,7 +249,14 @@ ifconfig
 
 **A. SSH**
 
-SSH 在 Seeed NPi-STM32MP157C 中自动启动。对于 Windows 用户，可用第三方 SSH 客户端。对于 Linux/Mac 用户，SSH 客户端是内置的。
+SSH 为 Secure Shell 的缩写，由 IETF 的网络小组（Network Working Group）所制定；SSH 为建立在应用层基础上的安全协议。SSH 是较可靠，专为远程登录会话和其他网络服务提供安全性的协议。我们的提供的镜像中没有自带ssh这个协议所以我们需要通过串口去进行配置，从而实现通过ssh协议进行设备的与电脑之间的通信。输入下面的命令将在Seeed NPi-STM32MP157C中安装ssh服务。
+
+```bash
+sudo apt-get install openssh-server -y
+systemctl start ssh.service
+```
+
+下面，我们将使用SSH对Seeed NPi-STM32MP157C进行访问，Windows 用户，可用第三方 SSH 客户端。对于 Linux/Mac 用户，SSH 客户端是内置的。
 
 - Windows 用户 : 使用 PUTTY，选择 SSH 协议，填写正确的 IP 地址并单击 open。用户名是debian,密码是temppwd。
 
@@ -276,8 +271,17 @@ ssh debian@IP
 请注意，如果使用 SSH 时性能体验下降，请切换到更畅通的 WiFi 网络。
 </div>
 
+### Pyqt
 
+PyQt是用于Qt跨平台c++框架的最流行的Python黏合之一,
 
+```bash
+sed -i 's/deb.debian.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apt/sources.list
+sudo apt-get update
+sudo apt-get install python3 python3-distutils python3-pyqt5 git  
+export QT_QPA_PLATFORM=linuxfb:fb=/dev/fb0
+
+```
 
 ## 资源下载
 -----
