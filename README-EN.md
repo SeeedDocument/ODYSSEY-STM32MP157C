@@ -496,7 +496,7 @@ In this section, we'll walk you through the use of the USB to TTL adapter, which
 - **Step 1.** Connect Uart port To PC/Mac using USB To TTL Adapter. Note: The voltage of RX/TX is 3.3v. If you don't have USB To TTL Adapter, click [HERE](https://item.taobao.com/item.htm?id=550981934087) to buy.（RX->TX,TX->RX）
 
 - **Step 2.** Using the following serial debugging tools, the baud rate is 115200:
-    - Windows : Use [PUTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html), 选择 ```Serial``` protocol, fill in the COM port corresponding to Seeed NPi-STM32MP157C,```115200``` baud rate, 8 bit, no parity bits, a stop bit 1, no flow control.
+    - Windows : Use [PUTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html), select ```Serial``` protocol, fill in the COM port corresponding to Seeed NPi-STM32MP157C,```115200``` baud rate, 8 bit, no parity bits, a stop bit 1, no flow control.
     - Linux : Depending on the USB To TTL Adapter, should be ```screen /dev/ttyACM0(,1, and so on) 115200``` or ```screen /dev/ttyUSB0(,1, and so on) 115200```.
     - Mac : Depending on the USB To TTL Adapter, should be ```screen /dev/cu.usbserial1412(,1422, and so on) 115200``` or ```screen /dev/cu.usbmodem1412(,1422, and so on) 115200```.
 
