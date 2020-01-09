@@ -361,7 +361,7 @@ The following is a detailed description of Seeed SoM - STM32MP157C's hardware.
 |-|70|-|-|-|-|
 
 
-### pin function
+### Pin Function
 
 ![](https://github.com/SeeedDocument/Seeed-NPi-STM32MP157C/raw/master/IMG/GPIO.png)
 
