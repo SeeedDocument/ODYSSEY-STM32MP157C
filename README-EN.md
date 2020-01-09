@@ -402,10 +402,10 @@ I2S bus is a pci bus developed by philips for audio data transmission between di
 
 ## Introduction To Software
 
-### Preparatory work
+### Preparatory Work
 
 
-**Materials required**
+**Materials Required**
 
 - Seeed NPi-STM32MP157C
 - Wi-Fi network
@@ -461,7 +461,7 @@ Click here to download [firmware](https://github.com/Seeed-Studio/seeed-linux-im
 
 - **Step 5.** Set the slide switch to eMMC and restart.
 
-**Serial console**
+**Serial Console**
 
 Now that your Seeed NPi-STM32MP157C is up, you may want to access your Linux system through the console, then set up WiFi, and so on. Two serial port access methods are provided for Linux access: 
 
