@@ -10,9 +10,7 @@ sku: 102010048
 
 # Seeed NPi-STM32MP157C
 
-![]()
-
-Seeed NPi-STM32MP157C是由Seeed Studio基于STM32MP157C微控制器的开源硬件开发板.Seeed NPi-STM32MP157C不仅能提供系统的所有源码来供用户学习使之变成arm开发板,而且其大小与树莓派的大小类似。麻雀虽小但五脏俱全,Seeed NPi-STM32MP157C包括高性能灵活的 WiFi /蓝牙和两个 Grove 连接器,使其更容易连接到各种 Grove 传感器系列,支持MIPI DSI接口和CAN FD接口,同时也兼容树莓派的40-pin接口.
+Seeed NPi-STM32MP157C是由Seeed Studio基于STM32MP157C微控制器的开源硬件开发板.Seeed NPi-STM32MP157C不仅能提供系统的所有源码来供用户学习使之变成arm开发板,而且其大小与树莓派的大小类似。麻雀虽小但五脏俱全,Seeed NPi-STM32MP157C包括高性能灵活的 WiFi /蓝牙和两个 Grove 连接器,使其更容易连接到各种 Grove 传感器系列,支持MIPI DSI接口,同时也兼容树莓派的40-pin接口.
 
  [![](https://github.com/SeeedDocument/wiki_chinese/raw/master/docs/images/click_to_buy.PNG)](https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-11172317909.10.1e729b66GJVV3r&id=533937368398)
 
@@ -57,7 +55,7 @@ Seeed NPi-STM32MP157C是由Seeed Studio基于STM32MP157C微控制器的开源硬
 
 ## 硬件概述
 
-Seeed NPi-STM32MP157C 包括两个部分,分别是 Seeed NPi - STM32MP157C 和 Seeed SoM - STM32MP157C.
+Seeed NPi-STM32MP157C 包括两个部分,分别是 Seeed NPi - STM32MP157C 母板和 Seeed SoM - STM32MP157C.
 
 下面是Seeed NPi - STM32MP157C的硬件详细说明
 
@@ -115,295 +113,21 @@ Seeed NPi-STM32MP157C 包括两个部分,分别是 Seeed NPi - STM32MP157C 和 S
 
 - **25.STMPS2252MTR:** 电源开关芯片
 
-- **26.MP9943:** ⦁	Buck DCDC 电源芯片
+- **26.MP9943:** Buck DCDC 电源芯片
 
-- **27.WM8960:** ⦁	音频编解码芯片
+- **27.WM8960:** 音频编解码芯片
 
-- **28.MP2161:** ⦁	Buck DCDC 电源芯片
-
-下面是Seeed SoM - STM32MP157C的硬件详细说明
-
-![](https://github.com/SeeedDocument/Seeed-NPi-STM32MP157C/raw/master/IMG/SOM-overview.png)
-
-- **1.STM32MP157C:** 开发板的主控制芯片(Arm® Cortex®-A7 和 Cortex®-M4双架构处理器)
-
-- **2.MT41K256M16TW-107:P:** 512M16bitRAM内存芯片
-
-- **3.STPMIC1APQR:** 电源管理芯片
-
-- **4.EMMC04G-M627:** 4GeMMC内存
-
-- **5.LED:** 当供电成功时,PWR会被点亮,当系统正常运行时,USER将会无限循环闪烁.
-
-- **6.70-PIN接口:**可以从下面的表格来查找每个引脚对应的功能
-
-|Pin 封装编号|Pin 编号|Pin 名称|Pin 类型|可选择的功能|附加功能|
-|:------:|:------:|:------:|:------:|:------:|:------:|
-|-|1|5V_VIN|S|-|-|
-|-|2|3V3|S|-|-|
-|-|3|5V_VIN|S|-|-|
-|-|4|3V3|S|-|-|
-|-|5|5V_VIN|S|-|-|
-|-|6|3V3|S|-|-|
-|-|7|5V_VIN|S|-|-|
-|-|8|3V3|S|-|-|
-|-|9|5V_VIN|S|-|-|
-|-|10|3V3|S|-|-|
-|-|11|5V_VIN|S|-|-|
-|-|12|VDD|S|-|-|
-|-|13|5V_VIN|S|-|-|
-|-|14|VDD|S|-|-|
-|-|15|5V_VIN|S|-|-|
-|-|16|VBUS_OTG|S|-|-|
-|-|17|BST_OUT|S|-|-|
-|-|18|VBUS_OTG|S|-|-|
-|-|19|BST_OUT|S|-|-|
-|-|20|VBUS_SW|S|-|-|
-|-|21|BST_OUT|S|-|-|
-|-|22|VBUS_SW|S|-|-|
-|-|23|1V8_AUDIO|S|-|-|
-|-|24|VBUS_SW|S|-|-|
-|-|25|1V2_HDMI|S|-|-|
-|-|26|VBAT|S|-|-|
-|-|27|3V3_HDMI|S|-|-|
-|-|28|VBAT|S|-|-|
-|-|29|-|-|-|-|
-|-|30|-|-|-|-|
-|R4|31|VREF+|S|-|-|
-|AC4|32|PF14|I/O|TRACED6, DFSDM1_CKIN6,I2C4_SCL, I2C1_SCL,ETH1_GMII_RXD6, FMC_A8,EVENTOUT|ADC2_INP6,ADC2_INN2|
-|Y5|33|PF13|I/O|TRACED5, DFSDM1_DATIN6,I2C4_SMBA, I2C1_SMBA,DFSDM1_DATIN3,ETH1_GMII_RXD5, FMC_A7,EVENTOUT|ADC2_INP2|
-|Y4|34|PF15|I/O|TRACED7, I2C4_SDA,I2C1_SDA, ETH1_GMII_RXD7,FMC_A9, EVENTOUT|-|
-|-|35|GND|S|-|-|
-|L3|36|PD14|I/O|TIM4_CH3, SAI3_MCLK_B,UART8_CTS,FMC_AD0/FMC_D0,EVENTOUT|-|
-|U3|37|ANA0|A|-|ADC1_INP0,ADC1_INN1,ADC2_INP0,ADC2_INN1|
-|J2|38|PD15|I/O|TIM4_CH4, SAI3_MCLK_A,UART8_CTS,FMC_AD1/FMC_D1,LCD_R1,EVENTOUT|-|
-|U4|39|ANA1|A|-|ADC1_INP1,ADC2_INP1|
-|R2|40|PWR_ON|O|-|PWR_ONLP|
-|-|41|-|-|-|-|
-|-|42|GND|S|-|-|
-|-|43|-|-|-|-|
-|-|44|PA14|I/O|DBTRGO, DBTRGI, MCO2, EVENTOUT|-|
-|-|45|PONKEYN|I|-|-|
-|-|46|-|-|-|-|
-|-|47|-|-|-|-|
-|-|48|-|-|-|-|
-|-|49|-|-|-|-|
-|-|50|-|-|-|-|
-|-|51|-|-|-|-|
-|-|52|-|-|-|-|
-|-|53|-|-|-|-|
-|-|54|-|-|-|-|
-|-|55|-|-|-|-|
-|-|56|-|-|-|-|
-|-|57|-|-|-|-|
-|-|58|-|-|-|-|
-|-|59|-|-|-|-|
-|-|60|-|-|-|-|
-|-|61|-|-|-|-|
-|-|62|-|-|-|-|
-|-|63|-|-|-|-|
-|-|64|-|-|-|-|
-|-|65|-|-|-|-|
-|-|66|-|-|-|-|
-|-|67|-|-|-|-|
-|-|68|-|-|-|-|
-|-|69|-|-|-|-|
-|-|70|-|-|-|-|
-
-- **7.70-PIN接口:**可以从下面的表格来查找每个引脚对应的功能
-
-|Pin 封装编号|Pin 编号|Pin 名称|Pin 类型|可选择的功能|附加功能|
-|:------:|:------:|:------:|:------:|:------:|:------:|
-|-|1|5V_VIN|S|-|-|
-|-|2|3V3|S|-|-|
-|-|3|5V_VIN|S|-|-|
-|-|4|3V3|S|-|-|
-|-|5|5V_VIN|S|-|-|
-|-|6|3V3|S|-|-|
-|-|7|5V_VIN|S|-|-|
-|-|8|3V3|S|-|-|
-|-|9|5V_VIN|S|-|-|
-|-|10|3V3|S|-|-|
-|-|11|5V_VIN|S|-|-|
-|-|12|VDD|S|-|-|
-|-|13|5V_VIN|S|-|-|
-|-|14|VDD|S|-|-|
-|-|15|5V_VIN|S|-|-|
-|-|16|VBUS_OTG|S|-|-|
-|-|17|BST_OUT|S|-|-|
-|-|18|VBUS_OTG|S|-|-|
-|-|19|BST_OUT|S|-|-|
-|-|20|VBUS_SW|S|-|-|
-|-|21|BST_OUT|S|-|-|
-|-|22|VBUS_SW|S|-|-|
-|-|23|1V8_AUDIO|S|-|-|
-|-|24|VBUS_SW|S|-|-|
-|-|25|1V2_HDMI|S|-|-|
-|-|26|VBAT|S|-|-|
-|-|27|3V3_HDMI|S|-|-|
-|-|28|VBAT|S|-|-|
-|-|29|-|-|-|-|
-|-|30|-|-|-|-|
-|R4|31|VREF+|S|-|-|
-|AC4|32|PF14|I/O|TRACED6, DFSDM1_CKIN6,I2C4_SCL, I2C1_SCL,ETH1_GMII_RXD6, FMC_A8,EVENTOUT|ADC2_INP6,ADC2_INN2|
-|Y5|33|PF13|I/O|TRACED5, DFSDM1_DATIN6,I2C4_SMBA, I2C1_SMBA,DFSDM1_DATIN3,ETH1_GMII_RXD5, FMC_A7,EVENTOUT|ADC2_INP2|
-|Y4|34|PF15|I/O|TRACED7, I2C4_SDA,I2C1_SDA, ETH1_GMII_RXD7,FMC_A9, EVENTOUT|-|
-|-|35|GND|S|-|-|
-|L3|36|PD14|I/O|TIM4_CH3, SAI3_MCLK_B,UART8_CTS,FMC_AD0/FMC_D0,EVENTOUT|-|
-|U3|37|ANA0|A|-|ADC1_INP0,ADC1_INN1,ADC2_INP0,ADC2_INN1|
-|J2|38|PD15|I/O|TIM4_CH4, SAI3_MCLK_A,UART8_CTS,FMC_AD1/FMC_D1,LCD_R1,EVENTOUT|-|
-|U4|39|ANA1|A|-|ADC1_INP1,ADC2_INP1|
-|R2|40|PWR_ON|O|-|PWR_ONLP|
-|-|41|-|-|-|-|
-|-|42|GND|S|-|-|
-|-|43|-|-|-|-|
-|-|44|PA14|I/O|DBTRGO, DBTRGI, MCO2, EVENTOUT|-|
-|-|45|PONKEYN|I|-|-|
-|-|46|-|-|-|-|
-|-|47|-|-|-|-|
-|-|48|-|-|-|-|
-|-|49|-|-|-|-|
-|-|50|-|-|-|-|
-|-|51|-|-|-|-|
-|-|52|-|-|-|-|
-|-|53|-|-|-|-|
-|-|54|-|-|-|-|
-|-|55|-|-|-|-|
-|-|56|-|-|-|-|
-|-|57|-|-|-|-|
-|-|58|-|-|-|-|
-|-|59|-|-|-|-|
-|-|60|-|-|-|-|
-|-|61|-|-|-|-|
-|-|62|-|-|-|-|
-|-|63|-|-|-|-|
-|-|64|-|-|-|-|
-|-|65|-|-|-|-|
-|-|66|-|-|-|-|
-|-|67|-|-|-|-|
-|-|68|-|-|-|-|
-|-|69|-|-|-|-|
-|-|70|-|-|-|-|
-
-- **8.70-PIN接口:**可以从下面的表格来查找每个引脚对应的功能
-
-|Pin 封装编号|Pin 编号|Pin 名称|Pin 类型|可选择的功能|附加功能|
-|:------:|:------:|:------:|:------:|:------:|:------:|
-|-|1|5V_VIN|S|-|-|
-|-|2|3V3|S|-|-|
-|-|3|5V_VIN|S|-|-|
-|-|4|3V3|S|-|-|
-|-|5|5V_VIN|S|-|-|
-|-|6|3V3|S|-|-|
-|-|7|5V_VIN|S|-|-|
-|-|8|3V3|S|-|-|
-|-|9|5V_VIN|S|-|-|
-|-|10|3V3|S|-|-|
-|-|11|5V_VIN|S|-|-|
-|-|12|VDD|S|-|-|
-|-|13|5V_VIN|S|-|-|
-|-|14|VDD|S|-|-|
-|-|15|5V_VIN|S|-|-|
-|-|16|VBUS_OTG|S|-|-|
-|-|17|BST_OUT|S|-|-|
-|-|18|VBUS_OTG|S|-|-|
-|-|19|BST_OUT|S|-|-|
-|-|20|VBUS_SW|S|-|-|
-|-|21|BST_OUT|S|-|-|
-|-|22|VBUS_SW|S|-|-|
-|-|23|1V8_AUDIO|S|-|-|
-|-|24|VBUS_SW|S|-|-|
-|-|25|1V2_HDMI|S|-|-|
-|-|26|VBAT|S|-|-|
-|-|27|3V3_HDMI|S|-|-|
-|-|28|VBAT|S|-|-|
-|-|29|-|-|-|-|
-|-|30|-|-|-|-|
-|R4|31|VREF+|S|-|-|
-|AC4|32|PF14|I/O|TRACED6, DFSDM1_CKIN6,I2C4_SCL, I2C1_SCL,ETH1_GMII_RXD6, FMC_A8,EVENTOUT|ADC2_INP6,ADC2_INN2|
-|Y5|33|PF13|I/O|TRACED5, DFSDM1_DATIN6,I2C4_SMBA, I2C1_SMBA,DFSDM1_DATIN3,ETH1_GMII_RXD5, FMC_A7,EVENTOUT|ADC2_INP2|
-|Y4|34|PF15|I/O|TRACED7, I2C4_SDA,I2C1_SDA, ETH1_GMII_RXD7,FMC_A9, EVENTOUT|-|
-|-|35|GND|S|-|-|
-|L3|36|PD14|I/O|TIM4_CH3, SAI3_MCLK_B,UART8_CTS,FMC_AD0/FMC_D0,EVENTOUT|-|
-|U3|37|ANA0|A|-|ADC1_INP0,ADC1_INN1,ADC2_INP0,ADC2_INN1|
-|J2|38|PD15|I/O|TIM4_CH4, SAI3_MCLK_A,UART8_CTS,FMC_AD1/FMC_D1,LCD_R1,EVENTOUT|-|
-|U4|39|ANA1|A|-|ADC1_INP1,ADC2_INP1|
-|R2|40|PWR_ON|O|-|PWR_ONLP|
-|-|41|-|-|-|-|
-|-|42|GND|S|-|-|
-|-|43|-|-|-|-|
-|-|44|PA14|I/O|DBTRGO, DBTRGI, MCO2, EVENTOUT|-|
-|-|45|PONKEYN|I|-|-|
-|-|46|-|-|-|-|
-|-|47|-|-|-|-|
-|-|48|-|-|-|-|
-|-|49|-|-|-|-|
-|-|50|-|-|-|-|
-|-|51|-|-|-|-|
-|-|52|-|-|-|-|
-|-|53|-|-|-|-|
-|-|54|-|-|-|-|
-|-|55|-|-|-|-|
-|-|56|-|-|-|-|
-|-|57|-|-|-|-|
-|-|58|-|-|-|-|
-|-|59|-|-|-|-|
-|-|60|-|-|-|-|
-|-|61|-|-|-|-|
-|-|62|-|-|-|-|
-|-|63|-|-|-|-|
-|-|64|-|-|-|-|
-|-|65|-|-|-|-|
-|-|66|-|-|-|-|
-|-|67|-|-|-|-|
-|-|68|-|-|-|-|
-|-|69|-|-|-|-|
-|-|70|-|-|-|-|
-
+- **28.MP2161:** Buck DCDC 电源芯片
 
 ### 引脚功能
 
 ![](https://github.com/SeeedDocument/Seeed-NPi-STM32MP157C/raw/master/IMG/GPIO.png)
 
-Seeed NPi-STM32MP157C的40-PIN完全兼容树莓派的40PIN,包括GPIO,I2C,UART,SPI,I2S引脚,下面我们将分别进行介绍.
-
-#### GPIO
-
-GPIO,通用型之输入输出的简称,功能类似8051的P0—P3,其接脚可以供使用者由程控自由使用,PIN脚依现实考量可作为通用输入（GPI）或通用输出（GPO）或通用输入与输出（GPIO）,如当时钟产生器,片选等,具体位置参考上图.
-
-!!!Note
-    - 在GPIO模式下,每个数字I / O都可产生中断
-
-#### UART
-
-通用异步收发传输器,通常称作UART.它将要传输的资料在串行通信与并行通信之间加以转换.作为把并行输入信号转成串行输出信号的芯片,UART通常被集成于其他通讯接口的连结上.具体位置参考上图.
-
-!!!Note
-    - 有一个专用连接头用于连接 UART0 引脚并用于连接调试. 另外还有一个串行扩展连接端口.
-
-#### I2C
-
-I2C其实是IICBus简称,所以中文应该叫集成电路总线,它是一种串行通信总线,使用多主从架构.具体位置参考上图.
-
-!!!Note
-     第一个 I2C 总线用于读取 Cape 附加板上的 EEPROMS ,所以不能用于其他数字I/ O端口操作,但您仍然可使用它在可用地址中添加其他 I2C 设备. 第二个 I2C 总线可供您配置和使用.
-
-#### SPI
-
-SPI是串行外设接口的缩写,是一种高速的,全双工,同步的通信总线,并且在芯片的管脚上只占用四根线,节约了芯片的管脚,同时为PCB的布局上节省空间,提供方便,正是出于这种简单易用的特性,越来越多的芯片集成了这种通信协议具体位置参考上图具体位置参考上图.
-
-!!!Note
-    为了快速移出数据,您可以考虑使用其中一个 SPI 端口.
-
-#### I2S
-
-I2S总线是飞利浦公司为数字音频设备之间的音频数据传输而制定的一种总线标准,该总线专责于音频设备之间的数据传输,广泛应用于各种多媒体系统.具体位置参考上图.
-
+Seeed NPi-STM32MP157C的40-PIN完全兼容树莓派的40PIN,包括GPIO,I2C,UART,SPI,I2S引脚.
 
 ## 软件入门指导
 
 ### 准备工作
-
 
 **准备材料**
 
@@ -582,20 +306,111 @@ ssh debian@IP
 请注意,如果使用 SSH 时性能体验下降,请切换到更畅通的 WiFi 网络.
 </div>
 
-### Pyqt
+## CANBUS通信
 
-PyQt是用于Qt跨平台c++框架的最流行的Python黏合之一,下面我将针对我们应用对Pyqt进行使用
+下面是基于Seeed NPi-STM32MP157C利用[2 Channel CAN BUS FD Shield for Raspberry Pi](https://www.seeedstudio.com/2-Channel-CAN-BUS-FD-Shield-for-Raspberry-Pi-p-4072.html)进行CANBUS通信的历程,首先利用[Seeeduino V4.2](https://www.seeedstudio.com/Seeeduino-V4-2-p-2517.html)采集环境的温度和湿度然后通过Seeeduino V4.2上面的[CAN-BUS Shield V2](https://www.seeedstudio.com/CAN-BUS-Shield-V2.html)与Seeed NPi-STM32MP157C上面的2 Channel CAN BUS FD Shield for Raspberry Pi通信。
+
+### 准备工作
+
+**准备材料**
+
+- Seeed NPi-STM32MP157C
+- Wi-Fi 网络
+- 4GB (或更大) SD 卡和 SD 读卡器
+- PC 或 Mac
+- [USB To Uart Adapter](https://www.seeedstudio.com/USB-To-Uart-5V%26amp%3B3V3-p-1832.html) (可选的)
+- 用于供电的12V/2ADC接口适配器 (可选的)
+- 一根 USB Type-C 线
+- 两根双公头杜邦线
+- [CAN-BUS Shield V2](https://www.seeedstudio.com/CAN-BUS-Shield-V2.html)
+- [Seeeduino V4.2](https://www.seeedstudio.com/Seeeduino-V4-2-p-2517.html)
+- [2 Channel CAN BUS FD Shield for Raspberry Pi](https://www.seeedstudio.com/2-Channel-CAN-BUS-FD-Shield-for-Raspberry-Pi-p-4072.html)
+- [Grove - Light Sensor v1.2](https://www.seeedstudio.com/Grove-Light-Sensor-v1-2.html)
+- [Grove - I2C High Accuracy Temp&Humi Sensor (SHT35)](https://www.seeedstudio.com/catalogsearch/result/?q=sht35)
+
+**硬件连接**
+
+- **步骤 1.** 根据[安装指南](http://wiki.seeedstudio.com/2-Channel-CAN-BUS-FD-Shield-for-Raspberry-Pi/#mounting-guide)将2 Channel CAN BUS FD Shield for Raspberry Pi插入到Seeed NPi-STM32MP157C上面
+
+- **步骤 2.** 将 CAN BUS Shield V2 插入 Seeeduino V4.2
+
+- **步骤 3.** 使用杜邦线将2 Channel CAN BUS FD Shield for Raspberry Pi将CAN-BUS Shield V2进行连接
+
+|2 Channel CAN BUS FD Shield for Raspberry Pi|CAN-BUS Shield V2|
+|:----:|:------:|
+|CAN_0_L|CANL|
+|CAN_0_H|CANH|
+
+- **步骤 4.** 将Seeed NPi-STM32MP157C和Seeeduino V4.2供电
+
+**依赖项安装**
+
+- **步骤 1.** 安装`python`的相关环境
+
+```bsah
+sudo apt-get update
+sudo apt-get install python3 python3-distutils python3-pyqt5  python3-pip python3-numpy -y
+```
+- **步骤 2.** 安装`git`
+
+```bsah
+sudo apt-get install git -y
+```
+
+- **步骤 3.** 安装`make`相关环境
+
+```bsah
+sudo apt-get install make device-tree-compiler gcc -y
+```
+
+### 软件安装
+
+**安装CAN-HAT**
 
 ```bash
-
-sudo sed -i 's/deb.debian.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apt/sources.list
-sudo apt-get update
-sudo apt-get install python3 python3-distutils python3-pyqt5 git  
-
-export QT_QPA_PLATFORM=linuxfb:fb=/dev/fb0
-
+dpkg -l | grep linux
+sudo apt-get install linux-headers-4.19.9-stm32-r1 -y
 git clone https://github.com/Seeed-Studio/seeed-linux-dtverlays
 cd seeed-linux-dtverlays
+make && make install_stm32mp1
+
+sudo mkdir -p /lib/modules/4.19.9-stm32-r1/kernel/drivers/net/can/spi/
+cd ~/seeed-linux-dtverlays/modules/mcp25xxfd
+make && sudo make install
+
+sudo reboot
+
+debian@npi:~$ dmesg | grep spi
+[    1.057609] spi_stm32 44009000.spi: driver initialized
+[    9.852726] mcp25xxfd spi0.0: Linked as a consumer to regulator.6
+[    9.966510] mcp25xxfd spi0.0: MCP2517 successfully initialized.
+
+debian@npi:~$ ifconfig -a
+can0: flags=128<NOARP>  mtu 16
+        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 10  (UNSPEC)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+sudo ip link set can0 up type can bitrate 500000 dbitrate 8000000 restart-ms 1000 berr-reporting on fd on
+sudo ifconfig can0 txqueuelen 65536
+
+debian@npi:~$ ip -details link show can0
+3: can0: <NOARP,UP,LOWER_UP,ECHO> mtu 16 qdisc pfifo_fast state UNKNOWN mode DEFAULT group default qlen 10
+    link/can  promiscuity 0 minmtu 0 maxmtu 0
+    can state ERROR-ACTIVE (berr-counter tx 0 rx 0) restart-ms 0
+          bitrate 500000 sample-point 0.875
+          tq 25 prop-seg 34 phase-seg1 35 phase-seg2 10 sjw 1
+          mcp25xxfd: tseg1 2..256 tseg2 1..128 sjw 1..128 brp 1..256 brp-inc 1
+          mcp25xxfd: dtseg1 1..32 dtseg2 1..16 dsjw 1..16 dbrp 1..256 dbrp-inc 1
+          clock 40000000numtxqueues 1 numrxqueues 1 gso_max_size 65536 gso_max_segs 65535
+sudo pip3 install python-can
+
+git clone --depth=1 https://github.com/pyqtgraph/pyqtgraph.git
+sudo python3 setup.py install
+
+export QT_QPA_PLATFORM=linuxfb:fb=/dev/fb0
 
 ```
 

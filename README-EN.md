@@ -11,7 +11,7 @@ sku: 102010048
 
 ![]()
 
-Seeed NPi-STM32MP157C is an open source hardware development board based on the STM32MP157C microcontroller by Seeed Studio. Seeed NPi-STM32MP157C not only provides all of the system's source code for users to learn how to turn it into an arm development board, but it's similar in size to a Raspberry Pi. Although the house sparrow is small, but be fullies equipped. It includes a high performance flexible WiFi/bluetooth interface and two Grove connectors,  which make it easier to connect to the large grove sensor family. It supports the MIPI DSI interface and CAN FD interface, also compatible with Raspberry Pi's 40-pin interface.
+Seeed NPi-STM32MP157C is an open source hardware development board based on the STM32MP157C microcontroller by Seeed Studio. Seeed NPi-STM32MP157C not only provides all of the system's source code for users to learn how to turn it into an arm development board, but it's similar in size to a Raspberry Pi. Although the house sparrow is small, but be fullies equipped. It includes a high performance flexible WiFi/bluetooth interface and two Grove connectors,  which make it easier to connect to the large grove sensor family. It supports the MIPI DSI interface, also compatible with Raspberry Pi's 40-pin interface.
 
  [![](https://github.com/SeeedDocument/wiki_chinese/raw/master/docs/images/click_to_buy.PNG)](https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-11172317909.10.1e729b66GJVV3r&id=533937368398)
 
