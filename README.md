@@ -378,8 +378,8 @@ make && sudo make install
 - **步骤 3.** 将编译好的`dtbo`文件加载到`/boot/uEnv.txt`中,重启使其生效.
 
 ```bash
-sudo echo uboot_overlay_addr0=/lib/firmware/BB-GPIO-P9813.dtbo >> /boot/uEnv.txt
-sudo echo uboot_overlay_addr1=/lib/firmware/BB-GPIO-P9813.dtbo >> /boot/uEnv.txt
+sudo echo uboot_overlay_addr0=/lib/firmware/stm32mp1-seeed-lcd-01-overlay.dtbo >> /boot/uEnv.txt
+sudo echo uboot_overlay_addr1=/lib/firmware/stm32mp1-MCP2517FD-can0-overlay.dtbo >> /boot/uEnv.txt
 sudo reboot
 ```
 - **步骤 4.** 使用`dmesg`查看设备是否安装成功，安装成功会出现下面的信息.
