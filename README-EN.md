@@ -1,6 +1,6 @@
 ---
-name: Seeed NPi-STM32MP157C
-category: Seeed NPi-STM32MP157C
+name: ODYSSEY – STM32MP157C 
+category: ODYSSEY – STM32MP157C 
 bzurl: https://www.seeedstudio.com/SeeedStudio-BeagleBone-Green-Wireless-p-2650.html
 oldwikiname: SeeedStudio_BeagleBone_Green_Wireless
 prodimagename: BBGW_cover.png
@@ -8,60 +8,40 @@ wikiurl: http://wiki.seeedstudio.com/cn/BeagleBone_Green_Wireless
 sku: 102010048
 ---
 
-# Seeed NPi-STM32MP157C
+# ODYSSEY – STM32MP157C
 
-![]()
+ODYSSEY - STM32MP157C is a single board computer based on STM32MP157C, the STM32MP157C is a dual-core arm-cortex-a7 core processor operating at 650Mhz, the processor is also integrated with the Arm cortex-m4 coprocessor, make the Arm cortex-m4 integrated inside FPU and MPU, Cortex-a7 mainly does things at the operating system level, Cortex-m handles things at the MCU level. It can reach the optimal state at any time, making it suitable for various application scenarios.
 
-<<<<<<< HEAD
-Seeed NPi-STM32MP157C is an open source hardware development board based on the STM32MP157C microcontroller by Seeed Studio. Seeed NPi-STM32MP157C not only provides all of the system's source code for users to learn how to turn it into an arm development board, but it's similar in size to a Raspberry Pi. Although the house sparrow is small, but be fullies equipped. It includes a high performance flexible WiFi/bluetooth interface and two Grove connectors,  which make it easier to connect to the large grove sensor family. It supports the MIPI DSI interface, also compatible with Raspberry Pi's 40-pin interface.
-=======
-Seeed NPi-STM32MP157C is an open source hardware development board based on the STM32MP157C microcontroller by Seeed Studio. Seeed NPi-STM32MP157C not only provides all of the system's source code for users to learn how to turn it into an arm development board, but it's similar in size to a Raspberry Pi. Although the house sparrow is small, but be fullies equipped. It includes a high performance flexible WiFi/bluetooth interface and two Grove connectors,  which make it easier to connect to the various grove sensor family. It supports the MIPI DSI interface and CAN FD interface, also compatible with Raspberry Pi's 40-pin interface.
->>>>>>> 6f5a10ba3f4c76f9cc241ce4899150e7dda1d123
-
- [![](https://github.com/SeeedDocument/wiki_chinese/raw/master/docs/images/click_to_buy.PNG)](https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-11172317909.10.1e729b66GJVV3r&id=533937368398)
+[![](https://github.com/SeeedDocument/wiki_chinese/raw/master/docs/images/click_to_buy.PNG)](https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-11172317909.10.1e729b66GJVV3r&id=533937368398)
 
 ## Features
 
-- 16-bit 512M RAM & 4GB eMMC
-- USB OTG: can be attached to USB devices
-- 2.4G WiFi & BT 4.2 （External antenna is available）
-- Grove interface (one IIC and one Digital)
-- 3.5mm Audio jack
-- Debian-based Linux system
-- 40-PIN GPIO compatible with Raspberry Pi
-- Support for gigabit Ethernet
-- Support for MIPI DSI display
-- Support DVP camera
-- Support audio playback
-- Additional power supply through DC interface (12V/2A power input is recommended)
+- Compact in size and powerful in function
+- scalable industrial grade
+- open source hardware/SDK/API/BSP/OS
 
 ## Specification
 
 |Item|Values|
 |----|------|
-|CPU | STM32MP157C<br>(Arm® Cortex®-A7 and Cortex®-M4 Dual architecture processor) |
-|Memory | 512M DDR3 |
-|On-board flash memory | 4GB eMMC |
-|CPU support | 3D graphics accelerator, CAN FD agreement, MIPI DSI display |
-|USB support | Power supply and communication |
-|USB | USB2.0 host	x2 |
-|Grove interface | Two (IIC and Digital) |
-|GPIO | 40-PIN |
-|Ethernet | Gigabit |
+|Peripheral Interface| 2 x USB Host<br>1 x gigabit Ethernet interface<br>1 x 3.5mm audio interface<br>1 x MIPI DSI display interface<br>1 x DVP camera interface<br>2 x Grove (GPIO & I2C)<br>1 x SD card interface (on the back of the board)|
+|WiFi/Bluetooth|WiFi 802.11 b/g/n 2.4GHz<br>Bluetooth 4.1|
+|On-board LED|1 x reset LED<br>3 x user-defined LED<br>1 x power LED|
+|Power|1 x DC interface (12V/2A power input is recommended)<br>1 x USB Type - C|
+|Button|1 x reset button<br>1 x user button<br>1 x dial code key|
 |Operating temperature | 0 ~ 75 ℃ |
 
 ## Application
 
-- The Internet of things
-- The home of wisdom
-- Automation and process control
-- The man-machine interface
-- Sensor center
-- Robot
+- Consumers
+- Industrial
+- White goods
+- Medical
+- Quality wearable devices
 
 ## Hardware Overview
 
-Seeed NPi-STM32MP157C consists of two parts: Seeed NPi - STM32MP157C and Seeed SoM - STM32MP157C.
+ODYSSEY – STM32MP157C consists of two parts: Seeed NPi - STM32MP157C and Seeed SoM - STM32MP157C.
 
 Seeed NPi-STM32MP157C hardware details follow:
 
@@ -125,284 +105,11 @@ Seeed NPi-STM32MP157C hardware details follow:
 
 - **28.MP2161:** Buck DCDC Power chip.
 
-The following is a detailed description of Seeed SoM - STM32MP157C's hardware.
-
-![](https://github.com/SeeedDocument/Seeed-NPi-STM32MP157C/raw/master/IMG/SOM-overview.png)
-
-- **1.STM32MP157C:** Main control chip of development board(Arm® Cortex®-A7 and Cortex®-M4 dual-architecture processors).
-
-- **2.MT41K256M16TW-107:P:** 512M 16bit RAM memory chip.
-
-- **3.STPMIC1APQR:** Power management chip.
-
-- **4.EMMC04G-M627:** 4GeMMC memory.
-
-- **5.LED:** When the power supply is successful, the PWR will be turned on, and when the system is running normally, the USER will flicker indefinitely.
-
-- **6.70-PIN Interface:** You can find the function for each pin from the table below
-
-|Pin package number|Pin number|Pin name|Pin type|Optional function|additional function|
-|:------:|:------:|:------:|:------:|:------:|:------:|
-|-|1|5V_VIN|S|-|-|
-|-|2|3V3|S|-|-|
-|-|3|5V_VIN|S|-|-|
-|-|4|3V3|S|-|-|
-|-|5|5V_VIN|S|-|-|
-|-|6|3V3|S|-|-|
-|-|7|5V_VIN|S|-|-|
-|-|8|3V3|S|-|-|
-|-|9|5V_VIN|S|-|-|
-|-|10|3V3|S|-|-|
-|-|11|5V_VIN|S|-|-|
-|-|12|VDD|S|-|-|
-|-|13|5V_VIN|S|-|-|
-|-|14|VDD|S|-|-|
-|-|15|5V_VIN|S|-|-|
-|-|16|VBUS_OTG|S|-|-|
-|-|17|BST_OUT|S|-|-|
-|-|18|VBUS_OTG|S|-|-|
-|-|19|BST_OUT|S|-|-|
-|-|20|VBUS_SW|S|-|-|
-|-|21|BST_OUT|S|-|-|
-|-|22|VBUS_SW|S|-|-|
-|-|23|1V8_AUDIO|S|-|-|
-|-|24|VBUS_SW|S|-|-|
-|-|25|1V2_HDMI|S|-|-|
-|-|26|VBAT|S|-|-|
-|-|27|3V3_HDMI|S|-|-|
-|-|28|VBAT|S|-|-|
-|-|29|-|-|-|-|
-|-|30|-|-|-|-|
-|R4|31|VREF+|S|-|-|
-|AC4|32|PF14|I/O|TRACED6, DFSDM1_CKIN6,I2C4_SCL, I2C1_SCL,ETH1_GMII_RXD6, FMC_A8,EVENTOUT|ADC2_INP6,ADC2_INN2|
-|Y5|33|PF13|I/O|TRACED5, DFSDM1_DATIN6,I2C4_SMBA, I2C1_SMBA,DFSDM1_DATIN3,ETH1_GMII_RXD5, FMC_A7,EVENTOUT|ADC2_INP2|
-|Y4|34|PF15|I/O|TRACED7, I2C4_SDA,I2C1_SDA, ETH1_GMII_RXD7,FMC_A9, EVENTOUT|-|
-|-|35|GND|S|-|-|
-|L3|36|PD14|I/O|TIM4_CH3, SAI3_MCLK_B,UART8_CTS,FMC_AD0/FMC_D0,EVENTOUT|-|
-|U3|37|ANA0|A|-|ADC1_INP0,ADC1_INN1,ADC2_INP0,ADC2_INN1|
-|J2|38|PD15|I/O|TIM4_CH4, SAI3_MCLK_A,UART8_CTS,FMC_AD1/FMC_D1,LCD_R1,EVENTOUT|-|
-|U4|39|ANA1|A|-|ADC1_INP1,ADC2_INP1|
-|R2|40|PWR_ON|O|-|PWR_ONLP|
-|-|41|-|-|-|-|
-|-|42|GND|S|-|-|
-|-|43|-|-|-|-|
-|-|44|PA14|I/O|DBTRGO, DBTRGI, MCO2, EVENTOUT|-|
-|-|45|PONKEYN|I|-|-|
-|-|46|-|-|-|-|
-|-|47|-|-|-|-|
-|-|48|-|-|-|-|
-|-|49|-|-|-|-|
-|-|50|-|-|-|-|
-|-|51|-|-|-|-|
-|-|52|-|-|-|-|
-|-|53|-|-|-|-|
-|-|54|-|-|-|-|
-|-|55|-|-|-|-|
-|-|56|-|-|-|-|
-|-|57|-|-|-|-|
-|-|58|-|-|-|-|
-|-|59|-|-|-|-|
-|-|60|-|-|-|-|
-|-|61|-|-|-|-|
-|-|62|-|-|-|-|
-|-|63|-|-|-|-|
-|-|64|-|-|-|-|
-|-|65|-|-|-|-|
-|-|66|-|-|-|-|
-|-|67|-|-|-|-|
-|-|68|-|-|-|-|
-|-|69|-|-|-|-|
-|-|70|-|-|-|-|
-
-- **7.70-PIN Interface:** You can find the function for each pin from the table below
-
-|Pin package number|Pin number|Pin name|Pin type|Optional function|additional function|
-|:------:|:------:|:------:|:------:|:------:|:------:|
-|-|1|5V_VIN|S|-|-|
-|-|2|3V3|S|-|-|
-|-|3|5V_VIN|S|-|-|
-|-|4|3V3|S|-|-|
-|-|5|5V_VIN|S|-|-|
-|-|6|3V3|S|-|-|
-|-|7|5V_VIN|S|-|-|
-|-|8|3V3|S|-|-|
-|-|9|5V_VIN|S|-|-|
-|-|10|3V3|S|-|-|
-|-|11|5V_VIN|S|-|-|
-|-|12|VDD|S|-|-|
-|-|13|5V_VIN|S|-|-|
-|-|14|VDD|S|-|-|
-|-|15|5V_VIN|S|-|-|
-|-|16|VBUS_OTG|S|-|-|
-|-|17|BST_OUT|S|-|-|
-|-|18|VBUS_OTG|S|-|-|
-|-|19|BST_OUT|S|-|-|
-|-|20|VBUS_SW|S|-|-|
-|-|21|BST_OUT|S|-|-|
-|-|22|VBUS_SW|S|-|-|
-|-|23|1V8_AUDIO|S|-|-|
-|-|24|VBUS_SW|S|-|-|
-|-|25|1V2_HDMI|S|-|-|
-|-|26|VBAT|S|-|-|
-|-|27|3V3_HDMI|S|-|-|
-|-|28|VBAT|S|-|-|
-|-|29|-|-|-|-|
-|-|30|-|-|-|-|
-|R4|31|VREF+|S|-|-|
-|AC4|32|PF14|I/O|TRACED6, DFSDM1_CKIN6,I2C4_SCL, I2C1_SCL,ETH1_GMII_RXD6, FMC_A8,EVENTOUT|ADC2_INP6,ADC2_INN2|
-|Y5|33|PF13|I/O|TRACED5, DFSDM1_DATIN6,I2C4_SMBA, I2C1_SMBA,DFSDM1_DATIN3,ETH1_GMII_RXD5, FMC_A7,EVENTOUT|ADC2_INP2|
-|Y4|34|PF15|I/O|TRACED7, I2C4_SDA,I2C1_SDA, ETH1_GMII_RXD7,FMC_A9, EVENTOUT|-|
-|-|35|GND|S|-|-|
-|L3|36|PD14|I/O|TIM4_CH3, SAI3_MCLK_B,UART8_CTS,FMC_AD0/FMC_D0,EVENTOUT|-|
-|U3|37|ANA0|A|-|ADC1_INP0,ADC1_INN1,ADC2_INP0,ADC2_INN1|
-|J2|38|PD15|I/O|TIM4_CH4, SAI3_MCLK_A,UART8_CTS,FMC_AD1/FMC_D1,LCD_R1,EVENTOUT|-|
-|U4|39|ANA1|A|-|ADC1_INP1,ADC2_INP1|
-|R2|40|PWR_ON|O|-|PWR_ONLP|
-|-|41|-|-|-|-|
-|-|42|GND|S|-|-|
-|-|43|-|-|-|-|
-|-|44|PA14|I/O|DBTRGO, DBTRGI, MCO2, EVENTOUT|-|
-|-|45|PONKEYN|I|-|-|
-|-|46|-|-|-|-|
-|-|47|-|-|-|-|
-|-|48|-|-|-|-|
-|-|49|-|-|-|-|
-|-|50|-|-|-|-|
-|-|51|-|-|-|-|
-|-|52|-|-|-|-|
-|-|53|-|-|-|-|
-|-|54|-|-|-|-|
-|-|55|-|-|-|-|
-|-|56|-|-|-|-|
-|-|57|-|-|-|-|
-|-|58|-|-|-|-|
-|-|59|-|-|-|-|
-|-|60|-|-|-|-|
-|-|61|-|-|-|-|
-|-|62|-|-|-|-|
-|-|63|-|-|-|-|
-|-|64|-|-|-|-|
-|-|65|-|-|-|-|
-|-|66|-|-|-|-|
-|-|67|-|-|-|-|
-|-|68|-|-|-|-|
-|-|69|-|-|-|-|
-|-|70|-|-|-|-|
-
-- **8.70-PIN Interface:** You can find the function for each pin from the table below
-
-|Pin package number|Pin number|Pin name|Pin type|Optional function|additional function|
-|:------:|:------:|:------:|:------:|:------:|:------:|
-|-|1|5V_VIN|S|-|-|
-|-|2|3V3|S|-|-|
-|-|3|5V_VIN|S|-|-|
-|-|4|3V3|S|-|-|
-|-|5|5V_VIN|S|-|-|
-|-|6|3V3|S|-|-|
-|-|7|5V_VIN|S|-|-|
-|-|8|3V3|S|-|-|
-|-|9|5V_VIN|S|-|-|
-|-|10|3V3|S|-|-|
-|-|11|5V_VIN|S|-|-|
-|-|12|VDD|S|-|-|
-|-|13|5V_VIN|S|-|-|
-|-|14|VDD|S|-|-|
-|-|15|5V_VIN|S|-|-|
-|-|16|VBUS_OTG|S|-|-|
-|-|17|BST_OUT|S|-|-|
-|-|18|VBUS_OTG|S|-|-|
-|-|19|BST_OUT|S|-|-|
-|-|20|VBUS_SW|S|-|-|
-|-|21|BST_OUT|S|-|-|
-|-|22|VBUS_SW|S|-|-|
-|-|23|1V8_AUDIO|S|-|-|
-|-|24|VBUS_SW|S|-|-|
-|-|25|1V2_HDMI|S|-|-|
-|-|26|VBAT|S|-|-|
-|-|27|3V3_HDMI|S|-|-|
-|-|28|VBAT|S|-|-|
-|-|29|-|-|-|-|
-|-|30|-|-|-|-|
-|R4|31|VREF+|S|-|-|
-|AC4|32|PF14|I/O|TRACED6, DFSDM1_CKIN6,I2C4_SCL, I2C1_SCL,ETH1_GMII_RXD6, FMC_A8,EVENTOUT|ADC2_INP6,ADC2_INN2|
-|Y5|33|PF13|I/O|TRACED5, DFSDM1_DATIN6,I2C4_SMBA, I2C1_SMBA,DFSDM1_DATIN3,ETH1_GMII_RXD5, FMC_A7,EVENTOUT|ADC2_INP2|
-|Y4|34|PF15|I/O|TRACED7, I2C4_SDA,I2C1_SDA, ETH1_GMII_RXD7,FMC_A9, EVENTOUT|-|
-|-|35|GND|S|-|-|
-|L3|36|PD14|I/O|TIM4_CH3, SAI3_MCLK_B,UART8_CTS,FMC_AD0/FMC_D0,EVENTOUT|-|
-|U3|37|ANA0|A|-|ADC1_INP0,ADC1_INN1,ADC2_INP0,ADC2_INN1|
-|J2|38|PD15|I/O|TIM4_CH4, SAI3_MCLK_A,UART8_CTS,FMC_AD1/FMC_D1,LCD_R1,EVENTOUT|-|
-|U4|39|ANA1|A|-|ADC1_INP1,ADC2_INP1|
-|R2|40|PWR_ON|O|-|PWR_ONLP|
-|-|41|-|-|-|-|
-|-|42|GND|S|-|-|
-|-|43|-|-|-|-|
-|-|44|PA14|I/O|DBTRGO, DBTRGI, MCO2, EVENTOUT|-|
-|-|45|PONKEYN|I|-|-|
-|-|46|-|-|-|-|
-|-|47|-|-|-|-|
-|-|48|-|-|-|-|
-|-|49|-|-|-|-|
-|-|50|-|-|-|-|
-|-|51|-|-|-|-|
-|-|52|-|-|-|-|
-|-|53|-|-|-|-|
-|-|54|-|-|-|-|
-|-|55|-|-|-|-|
-|-|56|-|-|-|-|
-|-|57|-|-|-|-|
-|-|58|-|-|-|-|
-|-|59|-|-|-|-|
-|-|60|-|-|-|-|
-|-|61|-|-|-|-|
-|-|62|-|-|-|-|
-|-|63|-|-|-|-|
-|-|64|-|-|-|-|
-|-|65|-|-|-|-|
-|-|66|-|-|-|-|
-|-|67|-|-|-|-|
-|-|68|-|-|-|-|
-|-|69|-|-|-|-|
-|-|70|-|-|-|-|
-
-
 ### Pin Function
 
 ![](https://github.com/SeeedDocument/Seeed-NPi-STM32MP157C/raw/master/IMG/GPIO.png)
 
 Seeed NPi-STM32MP157C's 40-pin is fully compatible with Raspberry Pi's 40PIN, including GPIO, IIC, UART, SPI, IIS and PWM pins, as described below.
-
-#### GPIO
-
-GPIO, Short for general type input and output, functions are similar to p0-p3 of 8051, it's connecting pin can be used freely by the user by program control, The PIN can be used as a general input (GPI) or general output (GPO) or general input and output (GPIO) based on practical considerations. For example, it can be used as CLK generator, chip select etc. Refer to the figure above for specific locations.
-
-!!!Note
-    - In GPIO mode, each digital I/O can generate an interrupt.
-
-#### UART
-
-A universal asynchronous transceiver, often referred to as a UART, the data it will transmit will be converted between serial communication and parallel communication. As a chip that converts a parallel input signal into a serial output signal, UART is usually integrated into the connection of other communication interfaces. Refer to the figure above for specific locations.
-
-!!!Note
-    - There is a dedicated connector for connecting to the UART0 pin and for connection debugging.There is also a serial extended connection port.
-
-#### I2C
-
-I2C is short for IICBus, so the Chinese should be called integrated circuit bus, it is a serial communication bus, using a multi-master-slave structure. Refer to the figure above for specific locations.
-
-!!!Note
-    - The first I2C bus is used to read the EEPROMS on the Cape add-on board and cannot be used for other digital I/O port operations without affecting this functionality, but you can still use it to add other I2C devices to the available addresses. The second I2C bus is available for you to configure and use.
-
-#### SPI
-
-SPI stands for serial peripheral interface, a high-speed, full-duplex, synchronous communication bus, only four wires are used in the pin of the chip, which saves the pin of the chip, it also saves space for PCB layout. Because it's easy to use, more and more chips are integrated with the SPI communication protocol. Refer to the figure above for specific locations.
-
-!!!Note
-    - To move data out quickly, you might consider using one of the SPI ports.
-
-#### I2S
-
-I2S bus is a pci bus developed by philips for audio data transmission between digital audio devices, the bus is dedicated to data transfer between audio devices, widely used in a variety of multimedia systems. Refer to the figure above for specific locations.
-
 
 ## Introduction To Software
 
@@ -411,7 +118,7 @@ I2S bus is a pci bus developed by philips for audio data transmission between di
 
 **Materials Required**
 
-- Seeed NPi-STM32MP157C
+- ODYSSEY – STM32MP157C
 - Wi-Fi network
 - 4GB (or more memory) SD card and SD card reader
 - PC or Mac
@@ -427,7 +134,7 @@ Please insert the USB cable gently, otherwise the interface may be damaged. Plea
 
 **Mirror Installation**
 
-Like Raspberry Pi, you need to install the Seeed NPi-STM32MP157C image from your SD card to get it up and running. We offer two ways to start Seeed NPi-STM32MP157C. You can boot from an SD card or from eMMC.
+Like Raspberry Pi, you need to install the ODYSSEY – STM32MP157C image from your SD card to get it up and running. We offer two ways to start ODYSSEY – STM32MP157C. You can boot from an SD card or from eMMC.
 
 **A. Boot from SD card**
 
@@ -445,7 +152,7 @@ Click here to download [Firmware](https://github.com/Seeed-Studio/seeed-linux-im
 ![](https://github.com/SeeedDocument/Respeaker_V2/raw/master/img/v2-flash-sd.png)
 
 
-- **Step 4.** After writing the image to the SD card, insert the SD card into Seeed NPi-STM32MP157C. Use USB type-c port to power the motherboard. Do not take out the SD card during writing. Seeed NPi-STM32MP157C will boot from the SD card, you can see the PWR and USER LED lighting. Now, go to the next section: the serial console.
+- **Step 4.** After writing the image to the SD card, insert the SD card into ODYSSEY – STM32MP157C. Use USB type-c port to power the motherboard. Do not take out the SD card during writing. ODYSSEY – STM32MP157C will boot from the SD card, you can see the PWR and USER LED lighting. Now, go to the next section: the serial console.
 
 **B. Boot from eMMC card**
 
@@ -461,13 +168,13 @@ Click here to download [firmware](https://github.com/Seeed-Studio/seeed-linux-im
 
 ![](https://github.com/SeeedDocument/Respeaker_V2/raw/master/img/v2-flash-sd.png)
 
-- **Step 4.** After writing the image to the SD card, insert the SD card into Seeed NPi STM32MP157C. use USB type-c port to power the motherboard, do not take out the SD card during writing. Seeed NPi STM32MP157C will start from the SD card, and you can see the PWR and USER LED light up.
+- **Step 4.** After writing the image to the SD card, insert the SD card into ODYSSEY – STM32MP157C. use USB type-c port to power the motherboard, do not take out the SD card during writing. ODYSSEY – STM32MP157C will start from the SD card, and you can see the PWR and USER LED light up.
 
 - **Step 5.** Set the slide switch to eMMC and restart.
 
 **Serial Console**
 
-Now that your Seeed NPi-STM32MP157C is up, you may want to access your Linux system through the console, then set up WiFi, and so on. Two serial port access methods are provided for Linux access: 
+Now your ODYSSEY – STM32MP157C is up, you may want to access your Linux system through the console, then set up WiFi, and so on. Two serial port access methods are provided for Linux access: 
 
 - A. OTG USB port - You need to run a Linux system on a circuit board.
 
@@ -475,7 +182,7 @@ Now that your Seeed NPi-STM32MP157C is up, you may want to access your Linux sys
 
 **A. Connect via OTG**
 
-- **Step 1.** Take a USB type-c cable and make sure it's a data cable, plug it into Seeed NPi-STM32MP157C's USB type-c port, and then plug the other end of the USB type-c cable into your computer. 
+- **Step 1.** Take a USB type-c cable and make sure it's a data cable, plug it into ODYSSEY – STM32MP157C's USB type-c port, and then plug the other end of the USB type-c cable into your computer. 
 
 - **Step 2.** Check whether the computer serial port is enabled:
 
@@ -495,7 +202,7 @@ Now that your Seeed NPi-STM32MP157C is up, you may want to access your Linux sys
 
 **B. Connect via UART port**
 
-In this section, we'll walk you through the use of the USB to TTL adapter, which connects to the Seeed NPi-STM32MP157C's Uart port(Located at the upper right of Seeed NPi-STM32MP157C), to establish a connection between your computer and Seeed NPi-STM32MP157C.
+In this section, we'll walk you through the use of the USB to TTL adapter, which connects to the ODYSSEY – STM32MP157C's Uart port(Located at the upper right of ODYSSEY – STM32MP157C), to establish a connection between your computer and Seeed NPi-STM32MP157C.
 
 - **Step 1.** Connect Uart port To PC/Mac using USB To TTL Adapter. Note: The voltage of RX/TX is 3.3v. If you don't have USB To TTL Adapter, click [HERE](https://item.taobao.com/item.htm?id=550981934087) to buy.（RX->TX,TX->RX）
 
@@ -518,13 +225,13 @@ You should get feedback like this:
 /dev/cu.usbmodem14XX where XX will vary depending on which USB port you used (on Mac)
 /dev/ttyACMX where X will vary depending on which USB port you used  (on Linux)
 ```
-Now follow the steps above to connect to Seeed NPi-STM32MP157C via a serial connection. This is usually what we need to do when we first boot up, as you will then set up Seeed NPi-STM32MP157C for Wi-Fi connection and then SSH or VNC connection.
+Now follow the steps above to connect to ODYSSEY – STM32MP157C via a serial connection. This is usually what we need to do when we first boot up, as you will then set up ODYSSEY – STM32MP157C for Wi-Fi connection and then SSH or VNC connection.
 
 **Network Settings**
 
 **A. Wi-Fi Settings**
 
-Configure the Seeed NPi-STM32MP157C network through the network management tool `connmanctl`, which has been installed on the Seeed NPi-STM32MP157C image. Follow these instructions to easily complete the configuration. 
+Configure the ODYSSEY – STM32MP157C network through the network management tool `connmanctl`, which has been installed on the Seeed NPi-STM32MP157C image. Follow these instructions to easily complete the configuration. 
 
 ```
 robot@ev3dev:~$ sudo connmanctl
@@ -551,7 +258,7 @@ Connected wifi_e8de27077de3_41483034303434393134_managed_psk
 connmanctl> quit
 ```
 
-Now use the following command to find Seeed NPi-STM32MP157C's IP address. 
+Now use the following command to find ODYSSEY – STM32MP157C's IP address. 
 ```
 ifconfig
 ```
@@ -567,11 +274,10 @@ You can connect to the network using an Ethernet cable. Just plug in the Etherne
 SSH, short for Secure Shell, is formulated by the Network Working Group of IETF. SSH is a security protocol based on the application layer. SSH is a more reliable protocol that provides security for remote login sessions and other network services. There is no SSH protocol in the image provided by us, so we need to configure it through the serial port, so as to realize the communication between the device and the computer through SSH protocol. Enter the following command to install the SSH service in Seeed NPi-STM32MP157C.
 
 ```bash
-sudo apt-get install openssh-server -y
-systemctl start ssh.service
+sudo apt-get install ssh -y
 ```
 
-Next, we'll use SSH to access Seeed NPi-STM32MP157C. Windows users can use third-party SSH clients. For Linux/Mac users, the SSH client is built in.
+Next, we'll use SSH to access ODYSSEY – STM32MP157C. Windows users can use third-party SSH clients. For Linux/Mac users, the SSH client is built in.
 
 - Windows users : Use PUTTY, select SSH protocol, fill in the correct IP address and click open. The user name is debian and the password is temppwd.
 
@@ -586,22 +292,106 @@ ssh debian@IP
 If the performance experience degrades while using SSH, please switch to a more accessible WiFi network.
 </div>
 
-### Pyqt
+## CANBUS Communication
 
-PyQt is one of the most popular Python adhesives for Qt cross-platform c++ frameworks, next I'll use Pyqt for our application.
+The following is the process of CANBUS communication using [2 Channel CAN BUS FD Shield for Raspberry Pi](https://www.seeedstudio.com/2-Channel-CAN-BUS-FD-Shield-for-Raspberry-Pi-p-4072.html) based on ODYSSEY -- STM32MP157C, first use [Seeeduino V4.2] (https://www.seeedstudio.com/Seeeduino-V4-2-p-2517.html) to collect the environment temperature and humidity, and then through the Seeeduino V4.2[CAN - BUS shields V2] (https://www.seeedstudio.com/CAN-BUS-Shield-V2.html) above and the ODYSSEY – STM32MP157C Channel 2 CAN BUS FD shields above for Raspberry Pi communication.
+
+###Preparation Work
+
+**Materials Required**
+
+- ODYSSEY - STM32MP157C
+- Wi-Fi network
+- 4GB (or more than 4GB) SD card and SD card reader
+- PC or Mac
+- [USB To Uart Adapter](https://www.seeedstudio.com/USB-To-Uart-5V%26amp%3B3V3-p-1832.html)(optional)
+- 12V/2ADC interface adapter for power supply (optional)
+- A USB type-c cable
+- Two double-male dupont lines
+- [CAN-BUS Shield V2](https://www.seeedstudio.com/CAN-BUS-Shield-V2.html)
+- [Seeeduino V4.2](https://www.seeedstudio.com/Seeeduino-V4-2-p-2517.html)
+- [2 Channel CAN BUS FD Shield for Raspberry Pi](https://www.seeedstudio.com/2-Channel-CAN-BUS-FD-Shield-for-Raspberry-Pi-p-4072.html)
+- [Grove - Light Sensor v1.2](https://www.seeedstudio.com/Grove-Light-Sensor-v1-2.html)
+- [Grove - I2C High Accuracy Temp&Humi Sensor (SHT35)](https://www.seeedstudio.com/catalogsearch/result/?q=sht35)
+
+**Hardware Connection**
+
+- **Step 1.** According to the [installation guide] (http://wiki.seeedstudio.com/2-Channel-CAN-BUS-FD-Shield-for-Raspberry-Pi/#mounting-guide) insert 2 Channel CAN BUS FD Shield for Raspberry Pi onto ODYSSEY STM32MP157C.
+- **Step 2.** Insert CAN BUS Shield V2 into Seeeduino V4.2.
+- **Step 3.** Connect Channel CAN BUS FD Shield for Raspberry Pi to can-bus Shield V2 using dupont wire.
+
+|2 Channel CAN BUS FD Shield for Raspberry Pi|CAN-BUS Shield V2|
+|:----:|:------:|
+|CAN_0_L|CANL|
+|CAN_0_H|CANH|
+
+- **Step 4.** Power ODYSSEY STM32MP157C and Seeeduino V4.2
+
+**Dependency installation**
+
+- **Step 1.** Install the environment for `python`.
+
+```bsah
+sudo apt-get update
+sudo apt-get install python3 python3-distutils python3-pyqt5  python3-pip python3-numpy -y
+sudo pip3 install python-can
+git clone --depth=1 https://github.com/pyqtgraph/pyqtgraph.git
+cd ~/pyqtgraph
+sudo python3 setup.py install
+```
+- **Step 2.** Install `git`.
+
+```bsah
+sudo apt-get install git -y
+```
+
+- **Step 3.** Install the `make` related environment.
+
+```bsah
+sudo apt-get install make device-tree-compiler gcc -y
+```
+
+### software installation
+
+**Install CAN-HAT and LCD drivers**
+
+- **Step 1.** Configure `can-bus`
 
 ```bash
+sudo ip link set can0 up type can bitrate 500000 dbitrate 8000000 restart-ms 1000 berr-reporting on fd on
+sudo ifconfig can0 txqueuelen 65536
 
-sudo sed -i 's/deb.debian.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apt/sources.list
-sudo apt-get update
-sudo apt-get install python3 python3-distutils python3-pyqt5 git  
+debian@npi:~$ ip -details link show can0
+3: can0: <NOARP,UP,LOWER_UP,ECHO> mtu 16 qdisc pfifo_fast state UNKNOWN mode DEFAULT group default qlen 10
+    link/can  promiscuity 0 minmtu 0 maxmtu 0
+    can state ERROR-ACTIVE (berr-counter tx 0 rx 0) restart-ms 0
+          bitrate 500000 sample-point 0.875
+          tq 25 prop-seg 34 phase-seg1 35 phase-seg2 10 sjw 1
+          mcp25xxfd: tseg1 2..256 tseg2 1..128 sjw 1..128 brp 1..256 brp-inc 1
+          mcp25xxfd: dtseg1 1..32 dtseg2 1..16 dsjw 1..16 dbrp 1..256 dbrp-inc 1
+          clock 40000000numtxqueues 1 numrxqueues 1 gso_max_size 65536 /gso_max_segs 65535
+```
 
+- **Step 2.** Configure the `lcd` environment
+
+
+```bash
 export QT_QPA_PLATFORM=linuxfb:fb=/dev/fb0
+```
 
-git clone https://github.com/Seeed-Studio/seeed-linux-dtverlays
-cd seeed-linux-dtverlays
+### Run the Demo
 
- ```
+Run the following code on 'ODYSSEY - STM32MP157C'
+
+```bash
+cd ~
+git clone https://github.com/SeeedDocument/Seeed-NPi-STM32MP157C.git
+cd ~/Seeed-NPi-STM32MP157C/examples
+python3 QtViewerForStm32p1.py
+```
+
+Run[CanBus_SendForArduino.ino](https://github.com/SeeedDocument/Seeed-NPi-STM32MP157C/blob/master/examples/CanBus_SendForArduino.ino) on `Seeeduino V4.2`.
+
 ## Resourses
 -----
 - **[PDF]** [STM32MP157C Datasheet](https://github.com/SeeedDocument/Seeed-NPi-STM32MP157C/raw/master/Hardware/stm32mp157c.pdf)
