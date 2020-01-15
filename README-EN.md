@@ -390,7 +390,7 @@ cd ~/Seeed-NPi-STM32MP157C/examples
 python3 QtViewerForStm32p1.py
 ```
 
-Run[CanBus_SendForArduino.ino](https://github.com/SeeedDocument/Seeed-NPi-STM32MP157C/blob/master/examples/CanBus_SendForArduino.ino) on `Seeeduino V4.2`.
+Run [CanBus_SendForArduino.ino](https://github.com/SeeedDocument/Seeed-NPi-STM32MP157C/blob/master/examples/CanBus_SendForArduino.ino) on `Seeeduino V4.2`.
 
 ## Resourses
 -----
