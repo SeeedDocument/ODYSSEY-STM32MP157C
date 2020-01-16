@@ -1,6 +1,6 @@
 # SOM – STM32MP157C 
 
-SOM – STM32MP157C是基于STM32MP157C的SOM，STM32MP157C是工作在650Mhz的双核Arm-Cortex-A7核心处理器，该处理器还集成了Arm Cortex-M4协处理器，使中Arm Cortex-M4里面集成了FPU和MPU，Cortex-A7主要做操作系统级别的事情而Cortex-M则负责处理MCU级别的事情，任何时候都能达到最佳的状态，使其适用于各种应用场景.
+SOM – STM32MP157C是基于STM32MP157C的SOM，STM32MP157C是工作在650Mhz的双核Arm-Cortex-A7核心处理器，该处理器还集成了Arm Cortex-M4协处理器，其中Arm Cortex-M4里面集成了FPU和MPU，Cortex-A7主要做操作系统级别的事情而Cortex-M则负责处理MCU级别的事情，任何时候都能达到最佳的状态，使其适用于各种应用场景.
 
 
  [![](https://github.com/SeeedDocument/wiki_chinese/raw/master/docs/images/click_to_buy.PNG)](https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-11172317909.10.1e729b66GJVV3r&id=533937368398)
