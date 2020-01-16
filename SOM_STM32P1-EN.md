@@ -1,20 +1,54 @@
-下面是Seeed SoM - STM32MP157C的硬件详细说明
+# SOM – STM32MP157C 
+
+SOM - STM32MP157C is the SOM based on STM32MP157C, STM32MP157C is a dual-core arm-cortex-a7 core processor operating at 650Mhz, the processor is also integrated with the Arm cortex-m4 coprocessor, Arm cortex-m4 integrates FPU and MPU. Cortex-a7 mainly does things at the operating system level, Cortex-m handles things at the MCU level. It can reach the optimal state at any time, making it suitable for various application scenarios.
+
+<p style=":center"><a href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-11172317909.10.1e729b66GJVV3r&id=533937368398" target="_blank"><img src="https://github.com/SeeedDocument/wiki_english/raw/master/docs/images/300px-Get_One_Now_Banner-ragular.png" /></a></p>
+
+
+## Features
+
+- Compact in size and powerful in function
+- Scalable industrial grade products
+- Open Source Hardware/ SDK / API / BSP / OS
+
+## Application
+
+- Consumer
+- Industrial
+- White goods
+- Medical
+- High quality wearable devices
+
+## Specification
+
+|Item|Value|
+|----|------|
+|MPU(STM32MP157C)|1 x 32-bit dual-core Arm Cortex-A7 <br>1 x 32-bit Arm Cortex-M4 with FPU/MPU|
+|PMU|1 x ST PMIC STPMIC1A |
+|RAM|1 x 512MB DDR3 RAM|
+|Flash|1 x 4GB EMMC|
+|Peripheral Interface|3 x board-to-board 70-Pin connector|
+|Size|38mm x 38mm|
+
+## Hardware 
+
+Here are the hardware details for Seeed SoM - STM32MP157C:
 
 ![](https://github.com/SeeedDocument/Seeed-NPi-STM32MP157C/raw/master/IMG/SOM-overview.png)
 
-- **1.STM32MP157C:** 开发板的主控制芯片(Arm® Cortex®-A7 和 Cortex®-M4双架构处理器)
+- **1.STM32MP157C:** Development board main control chip(Dual architecture processor: Arm® Cortex®-A7 and Cortex®-M4 )
 
-- **2.MT41K256M16TW-107:P:** 512M16bitRAM内存芯片
+- **2.MT41K256M16TW-107:P:** 512M16bitRAM Memory Chip
 
-- **3.STPMIC1APQR:** 电源管理芯片
+- **3.STPMIC1APQR:** Power Management Chip
 
-- **4.EMMC04G-M627:** 4GeMMC内存
+- **4.EMMC04G-M627:** 4GeMMC Memory
 
-- **5.LED:** 当供电成功时,PWR会被点亮,当系统正常运行时,USER将会无限循环闪烁.
+- **5.LED:** When the power supply is successful, the PWR will go on. When the system is running normally, the USER will keep flashing.
 
-- **6.70-PIN接口:**可以从下面的表格来查找每个引脚对应的功能
+- **6.70-PIN connector:** You can find the function for each pin from the table below:
 
-|Pin 封装编号|Pin 编号|Pin 名称|Pin 类型|可选择的功能|附加功能|
+|Pin Package Number|Pin Number|Pin Name|Pin Type|Optional Function|Additional Function|
 |:------:|:------:|:------:|:------:|:------:|:------:|
 |-|1|5V_VIN|S|-|-|
 |-|2|3V3|S|-|-|
@@ -87,9 +121,9 @@
 |-|69|-|-|-|-|
 |-|70|-|-|-|-|
 
-- **7.70-PIN接口:**可以从下面的表格来查找每个引脚对应的功能
+- **7.70-PIN connector:** You can find the function for each pin from the table below:
 
-|Pin 封装编号|Pin 编号|Pin 名称|Pin 类型|可选择的功能|附加功能|
+|Pin Package Number|Pin Number|Pin Name|Pin Type|Optional Function|Additional Function|
 |:------:|:------:|:------:|:------:|:------:|:------:|
 |-|1|5V_VIN|S|-|-|
 |-|2|3V3|S|-|-|
@@ -162,9 +196,9 @@
 |-|69|-|-|-|-|
 |-|70|-|-|-|-|
 
-- **8.70-PIN接口:**可以从下面的表格来查找每个引脚对应的功能
+- **8.70-PIN connector:** You can find the function for each pin from the table below:
 
-|Pin 封装编号|Pin 编号|Pin 名称|Pin 类型|可选择的功能|附加功能|
+|Pin Package Number|Pin Number|Pin Name|Pin Type|Optional Function|Additional Function|
 |:------:|:------:|:------:|:------:|:------:|:------:|
 |-|1|5V_VIN|S|-|-|
 |-|2|3V3|S|-|-|
@@ -236,36 +270,4 @@
 |-|68|-|-|-|-|
 |-|69|-|-|-|-|
 |-|70|-|-|-|-|
-,下面我们将分别进行介绍.
 
-#### GPIO
-
-GPIO,通用型之输入输出的简称,功能类似8051的P0—P3,其接脚可以供使用者由程控自由使用,PIN脚依现实考量可作为通用输入（GPI）或通用输出（GPO）或通用输入与输出（GPIO）,如当时钟产生器,片选等,具体位置参考上图.
-
-!!!Note
-    - 在GPIO模式下,每个数字I / O都可产生中断
-
-#### UART
-
-通用异步收发传输器,通常称作UART.它将要传输的资料在串行通信与并行通信之间加以转换.作为把并行输入信号转成串行输出信号的芯片,UART通常被集成于其他通讯接口的连结上.具体位置参考上图.
-
-!!!Note
-    - 有一个专用连接头用于连接 UART0 引脚并用于连接调试. 另外还有一个串行扩展连接端口.
-
-#### I2C
-
-I2C其实是IICBus简称,所以中文应该叫集成电路总线,它是一种串行通信总线,使用多主从架构.具体位置参考上图.
-
-!!!Note
-     第一个 I2C 总线用于读取 Cape 附加板上的 EEPROMS ,所以不能用于其他数字I/ O端口操作,但您仍然可使用它在可用地址中添加其他 I2C 设备. 第二个 I2C 总线可供您配置和使用.
-
-#### SPI
-
-SPI是串行外设接口的缩写,是一种高速的,全双工,同步的通信总线,并且在芯片的管脚上只占用四根线,节约了芯片的管脚,同时为PCB的布局上节省空间,提供方便,正是出于这种简单易用的特性,越来越多的芯片集成了这种通信协议具体位置参考上图.
-
-!!!Note
-    为了快速移出数据,您可以考虑使用其中一个 SPI 端口.
-
-#### I2S
-
-I2S总线是飞利浦公司为数字音频设备之间的音频数据传输而制定的一种总线标准,该总线专责于音频设备之间的数据传输,广泛应用于各种多媒体系统.具体位置参考上图.
