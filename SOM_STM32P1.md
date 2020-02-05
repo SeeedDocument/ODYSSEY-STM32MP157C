@@ -273,3 +273,12 @@ WKUP2|
 |H4|69|PI9|I/O|HDP1,UART4_RX,FDCAN1_RX,LCD_VSYNC,EVENTOUT|-|
 |B4|70|PE12|I/O|TIM1_CH3N,DFSDM1_DATIN5,SPI4_SCK,SDMMC1_D0DIR,SAI2_SCK_B,FMC_AD9/FMC_D9,LCD_B4,EVENTOUT|-|
 
+## 资源下载
+-----
+- **[PDF]** [STM32MP157C Datasheet](https://github.com/SeeedDocument/Seeed-NPi-STM32MP157C/raw/master/Hardware/stm32mp157c.pdf)
+- **[SCH]** [Seeed STM32MP157C SOM](https://github.com/SeeedDocument/Seeed-NPi-STM32MP157C/raw/master/Hardware/Seeed%20SoM%20-%20STM32MP157C%20v1.0_191212.pdf)
+- **[SCH]** [Seeed STM32MP157C NPi](https://github.com/SeeedDocument/Seeed-NPi-STM32MP157C/raw/master/Hardware/Seeed%20NPi%20-%20STM32MP157C%20v1.0_191212.pdf)
+
+## 技术支持
+
+您可以将技术问题发送到 [forum](http://forum.seeedstudio.com/). <br /><p style="text-align:center"><a href="https://www.seeedstudio.com/act-4.html?utm_source=wiki&utm_medium=wikibanner&utm_campaign=newproducts" target="_blank"><img src="https://github.com/SeeedDocument/Wiki_Banner/raw/master/new_product.jpg" /></a></p>
