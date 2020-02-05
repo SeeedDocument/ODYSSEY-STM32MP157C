@@ -31,6 +31,7 @@ ODYSSEY - STM32MP157C is a single board computer based on STM32MP157C, the STM32
 |On-board LED|1 x reset LED<br>3 x user-defined LED<br>1 x power LED|
 |Power|1 x DC interface (12V/2A power input is recommended)<br>1 x USB Type - C|
 |Button|1 x reset button<br>1 x user button<br>1 x dial code key|
+|dimension|56mm x 85mm|
 |Operating temperature | 0 ~ 75 ℃ |
 
 ## Application

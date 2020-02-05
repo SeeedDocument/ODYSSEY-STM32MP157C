@@ -28,7 +28,7 @@ SOM - STM32MP157C is the SOM based on STM32MP157C, STM32MP157C is a dual-core ar
 |RAM|1 x 512MB DDR3 RAM|
 |Flash|1 x 4GB EMMC|
 |Peripheral Interface|3 x board-to-board 70-Pin connector|
-|Size|38mm x 38mm|
+|dimension|38mm x 38mm|
 
 ## Hardware 
 

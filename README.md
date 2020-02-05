@@ -29,6 +29,7 @@ ODYSSEY – STM32MP157C是基于STM32MP157C的单板计算机，STM32MP157C是�
 |板载LED|1 x 复位LED<br>3 x 用户自定义LED<br>1 x 电源LED|
 |电源|1 x DC 接口(建议使用12V/2A电源输入)<br>1 x USB Type-C|
 |按键|1 x 复位按键<br>1 x 用户按键<br>1 x 拨码按键|
+|尺寸|56mm x 85mm|
 |工作温度	|0 ~ 75 ℃|
 
 ## 创意应用
@@ -41,7 +42,7 @@ ODYSSEY – STM32MP157C是基于STM32MP157C的单板计算机，STM32MP157C是�
 
 ## 硬件概述
 
-ODYSSEY – STM32MP157C  包括两个部分,分别是 Seeed NPi - STM32MP157C 母板和 Seeed SoM - STM32MP157C.
+ODYSSEY – STM32MP157C 包括两个部分,分别是 Seeed NPi - STM32MP157C 母板和 [Seeed SoM - STM32MP157C](https://github.com/SeeedDocument/Seeed-NPi-STM32MP157C/blob/master/SOM_STM32P1.md).
 
 下面是Seeed NPi - STM32MP157C的硬件详细说明
 
