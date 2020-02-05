@@ -10,6 +10,8 @@ sku: 102010048
 
 # ODYSSEY – STM32MP157C 
 
+ ![](https://github.com/SeeedDocument/Seeed-NPi-STM32MP157C/raw/master/IMG/overview.png)
+ 
 ODYSSEY – STM32MP157C是基于STM32MP157C的单板计算机，STM32MP157C是工作在650Mhz的双核Arm-Cortex-A7核心处理器，该处理器还集成了Arm Cortex-M4协处理器，使其适合于实时任务。 ODYSSEY – STM32MP157C以SoM（模块上系统）和载板的形式创建。 SoM由MPU，PMIC，RAM组成，并且载板采用Raspberry Pi尺寸.载板包括所有必需的外围设备，包括千兆以太网，WiFi / BLE，DC电源，USB主机，USB-C，MIPI-DSI，用于摄像机和音频的DVP等。通过该板，客户可以快速评估SoM并进行部署,SoM可以轻松快捷地放在自己的载板上.
 
  [![](https://github.com/SeeedDocument/wiki_chinese/raw/master/docs/images/click_to_buy.PNG)](https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-11172317909.10.1e729b66GJVV3r&id=533937368398)
