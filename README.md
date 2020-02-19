@@ -372,10 +372,7 @@ sudo apt-get install linux-headers-4.19.9-stm32-r1 -y
 ```bash
 git clone https://github.com/Seeed-Studio/seeed-linux-dtverlays
 cd seeed-linux-dtverlays
-make && make install_stm32mp1
-sudo mkdir -p /lib/modules/4.19.9-stm32-r1/kernel/drivers/net/can/spi/
-cd ~/seeed-linux-dtverlays/modules/mcp25xxfd
-make && sudo make install
+make all_stm32mp1 && sudo make install_stm32mp1
 ```
 
 - **步骤 3.** 将编译好的`dtbo`文件加载到`/boot/uEnv.txt`中,重启使其生效.
@@ -387,6 +384,7 @@ sudo reboot
 ```
 - **步骤 4.** 使用`dmesg`查看设备是否安装成功，安装成功会出现下面的信息.
 ```bash
+debian@npi:~$ sudo insmod /lib/modules/$(uname -r)/extra/seeed/mcp25xxfd-can.ko
 debian@npi:~$ dmesg | grep spi
 [    1.057609] spi_stm32 44009000.spi: driver initialized
 [    9.852726] mcp25xxfd spi0.0: Linked as a consumer to regulator.6
