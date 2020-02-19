@@ -339,21 +339,18 @@ ssh debian@IP
 ```bsah
 sudo apt-get update
 sudo apt-get install python3 python3-distutils python3-pyqt5  python3-pip python3-numpy -y
-sudo pip3 install python-can
-git clone --depth=1 https://github.com/pyqtgraph/pyqtgraph.git
-cd ~/pyqtgraph
-sudo python3 setup.py install
+sudo pip3 install python-can pyqtgraph
 ```
 - **步骤 2.** 安装`git`
 
 ```bsah
-sudo apt-get install git -y
+sudo apt install git -y
 ```
 
 - **步骤 3.** 安装`make`相关环境
 
 ```bsah
-sudo apt-get install make device-tree-compiler gcc -y
+sudo apt install make device-tree-compiler gcc -y
 ```
 
 ### 软件安装
@@ -364,7 +361,7 @@ sudo apt-get install make device-tree-compiler gcc -y
 
 ```bash
 dpkg -l | grep linux
-sudo apt-get install linux-headers-4.19.9-stm32-r1 -y
+sudo apt install linux-headers-$(uname -r) -y
 ```
 
 - **步骤 2.** 从github上面获取`seeed-linux-dtverlays`编译并安装对应的驱动
