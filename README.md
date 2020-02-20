@@ -236,7 +236,7 @@ ls /dev/ttyACM* (Linux)
 通过网络管理工具`connmanctl`配置 ODYSSEY – STM32MP157C  的网络,`connmanctl`已经安装在 ODYSSEY – STM32MP157C  的镜像上.按照下面的操作指令就能轻松完成配置.
 
 ```
-robot@ev3dev:~$ sudo connmanctl
+debian@npi:~$ sudo connmanctl
 Error getting VPN connections: The name net.connman.vpn was not provided by any
 connmanctl> enable wifi
 Enabled wifi
@@ -277,7 +277,7 @@ ifconfig
 SSH 为 Secure Shell 的缩写,由 IETF 的网络小组（Network Working Group）所制定；SSH 为建立在应用层基础上的安全协议.SSH 是较可靠,专为远程登录会话和其他网络服务提供安全性的协议.我们的提供的镜像中没有自带ssh这个协议所以我们需要通过串口去进行配置,从而实现通过ssh协议进行设备的与电脑之间的通信.输入下面的命令将在ODYSSEY – STM32MP157C 中安装ssh服务.
 
 ```bash
-sudo apt-get install ssh -y
+sudo apt install ssh -y
 ```
 
 下面,我们将使用SSH对ODYSSEY – STM32MP157C 进行访问,Windows 用户,可用第三方 SSH 客户端.对于 Linux/Mac 用户,则可以使用内置的SSH.
@@ -337,8 +337,8 @@ ssh debian@IP
 - **步骤 1.** 安装`python`的相关环境
 
 ```bsah
-sudo apt-get update
-sudo apt-get install python3 python3-distutils python3-pyqt5  python3-pip python3-numpy -y
+sudo apt update
+sudo apt install python3 python3-distutils python3-pyqt5  python3-pip python3-numpy -y
 sudo pip3 install python-can pyqtgraph
 ```
 - **步骤 2.** 安装`git`
