@@ -8,235 +8,237 @@ wikiurl: http://wiki.seeedstudio.com/cn/BeagleBone_Green_Wireless
 sku: 102010048
 ---
 
-# ODYSSEY – STM32MP157C 
+# ODYSSEY – STM32MP157C
 
  ![](https://github.com/SeeedDocument/Seeed-NPi-STM32MP157C/raw/master/IMG/overview.png)
- 
-ODYSSEY – STM32MP157C是基于STM32MP157C的单板计算机，STM32MP157C是工作在650Mhz的双核Arm-Cortex-A7核心处理器，该处理器还集成了Arm Cortex-M4协处理器，使其适合于实时任务。 ODYSSEY – STM32MP157C以SoM（模块上系统）和载板的形式创建。 SoM由MPU，PMIC，RAM组成，并且载板采用Raspberry Pi尺寸.载板包括所有必需的外围设备，包括千兆以太网，WiFi / BLE，DC电源，USB主机，USB-C，MIPI-DSI，用于摄像机和音频的DVP等。通过该板，客户可以快速评估SoM并进行部署,SoM可以轻松快捷地放在自己的载板上.
 
- [![](https://github.com/SeeedDocument/wiki_chinese/raw/master/docs/images/click_to_buy.PNG)](https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-11172317909.10.1e729b66GJVV3r&id=533937368398)
+ODYSSEY - STM32MP157C is a single board computer based on STM32MP157C, the STM32MP157C is a dual-core arm-cortex-a7 core processor operating at 650Mhz, the processor is also integrated with the Arm cortex-m4 coprocessor, make the Arm cortex-m4 integrated inside FPU and MPU, Cortex-a7 mainly does things at the operating system level, Cortex-m handles things at the MCU level. It can reach the optimal state at any time, making it suitable for various application scenarios.
 
-## 产品特性
+[![Get one now](https://raw.githubusercontent.com/SeeedDocument/Seeed-WiKi/master/docs/images/get_one_now.png)](https://www.seeedstudio.com/1.5W-Solar-Panel-81X137-p-952.html)
 
-- 体积小巧,功能强大
-- 可扩展的工业级
-- 开源硬件/ SDK / API / BSP / OS
 
-## 规格参数
+## Features
 
-|项目|参数值|
+- Compact in size and powerful in function
+- scalable industrial grade
+- open source hardware/SDK/API/BSP/OS
+
+## Specification
+
+|Item|Values|
 |----|------|
-|外围设备接口|2 x USB Host <br>1 x 千兆以太网接口<br>1 x 3.5mm音频接口<br>1 x MIPI DSI显示器接口<br>1 x DVP摄像头接口<br>2 x Grove (GPIO & I2C)<br>1 x SD卡接口(在板子背面)|
-|WiFi/蓝牙|WiFi 802.11 b/g/n 2.4GHz<br>蓝牙4.1|
-|板载LED|1 x 复位LED<br>3 x 用户自定义LED<br>1 x 电源LED|
-|电源|1 x DC 接口(建议使用12V/2A电源输入)<br>1 x USB Type-C|
-|按键|1 x 复位按键<br>1 x 用户按键<br>1 x 拨码按键|
-|尺寸|56mm x 85mm|
-|工作温度	|0 ~ 75 ℃|
+|Peripheral Interface| 2 x USB Host<br>1 x gigabit Ethernet interface<br>1 x 3.5mm audio interface<br>1 x MIPI DSI display interface<br>1 x DVP camera interface<br>2 x Grove (GPIO & I2C)<br>1 x SD card interface (on the back of the board)|
+|WiFi/Bluetooth|WiFi 802.11 b/g/n 2.4GHz<br>Bluetooth 4.1|
+|On-board LED|1 x reset LED<br>3 x user-defined LED<br>1 x power LED|
+|Power|1 x DC interface (12V/2A power input is recommended)<br>1 x USB Type - C|
+|Button|1 x reset button<br>1 x user button<br>1 x dial code key|
+|dimension|56mm x 85mm|
+|Operating temperature | 0 ~ 75 ℃ |
 
-## 创意应用
+## Application
 
-- 消费者
-- 工业
-- 白色家电
-- 医疗
-- 高端可穿戴设备
+- Consumers
+- Industrial
+- White goods
+- Medical
+- Quality wearable devices
 
-## 硬件概述
+## Hardware Overview
 
-ODYSSEY – STM32MP157C 包括两个部分,分别是 Seeed NPi - STM32MP157C 母板和 [Seeed SoM - STM32MP157C](https://github.com/SeeedDocument/Seeed-NPi-STM32MP157C/blob/master/SOM_STM32P1.md).
+ODYSSEY – STM32MP157C consists of two parts: Seeed NPi - STM32MP157C and Seeed SoM - STM32MP157C.
 
-下面是Seeed NPi - STM32MP157C的硬件详细说明
+Seeed NPi-STM32MP157C hardware details follow:
 
-![](https://github.com/SeeedDocument/Seeed-NPi-STM32MP157C/raw/master/IMG/front.png)
+ ![](https://github.com/SeeedDocument/Seeed-NPi-STM32MP157C/raw/master/IMG/front.png)
 
-![](https://github.com/SeeedDocument/Seeed-NPi-STM32MP157C/raw/master/IMG/back.png)
+ ![](https://github.com/SeeedDocument/Seeed-NPi-STM32MP157C/raw/master/IMG/back.png)
 
-- **1.Seeed SoM - STM32MP157C插槽:** 安装Seeed SoM - STM32MP157C的区域,如果用户想要取下核心板,慢慢将核心板翘起来,然后再取下,切忌用手暴力拆取.
+- **1.Seeed Som-stm32mp157c Slot :** Install the Seeed som-stm32mp157c area, if the user wants to remove the core board, slowly tilt the core board up and then remove, never remove by hand.
 
-- **2.DC电源输入口:** 12V~24V/2A (建议使用12V/2A电源输入).
+- **2.DC Power Input Port :** 12V~24V/2A (12V/2A power input is recommended).
 
-- **3.ETH接口:** 网线接口可接千兆级网络
+- **3.ETH Interface :** Network cable interface can be connected to gigabit level network.
 
-- **4.USB Host:** 两个USB Host接口
+- **4.USB Host:** Two USB Host ports.
 
-- **5.USB Device:** USB 2.0 Type C 如果使用Type C作为板子电源输入,应使用5V/3A电源适配器
+- **5.USB Device:** USB 2.0 Type C. If Type C is used as board power input, a 5V/3A power adapter should be used.
 
-- **6.Digital Grove接口:** 连接数字引脚的Grove接口
+- **6.Digital Grove Interface:** Connect the Grove interface to the digital pin. 
 
-- **7.IIC Grove接口:** 连接IIC引脚的Grove接口
+- **7.IIC Grove Interface:** Connect the Grove interface to the IIC pin.
 
-- **8.美标3.5mm:** 音频接口
+- **8.American Standard 3.5mm:**  Audio interface.
 
-- **9.MIPI DSI 接口:** 连接带MIPI DSI 接口的显示器(FPC 20Pin 1.0mm)
+- **9.MIPI DSI Interface:** Connect to a display with a MIPI DSI interface(FPC 20Pin 1.0mm).
 
-- **10.40 PIN GPIO接口:** 兼容树莓派的40-PIN
+- **10.40 PIN GPIO Interface:** Compatible with Raspberry Pi's 40-PIN.
 
-- **11.AP6236:** 2.4G WiFi & BT 4.2 控制芯片
+- **11.AP6236:** 2.4G WiFi & BT 4.2 control chip.
 
-- **12.滑动开关:** 可通过滑动开关选择SD卡或eMMC启动
+- **12.Slide Switch:** Can be used to select SD card or eMMC to start.
 
-- **13.Debug UART:** 系统默认的调试串口可以进入该串口去访问系统,后面会详细介绍如何操作.
+- **13.Debug UART:** The system default debugging serial port can enter this serial port to access the system, we'll talk more about how to do that later.
 
-- **14.JST 1.0mm:** 3VRTC电池接口
+- **14.JST 1.0mm:** 3VRTC battery interface.
 
-- **15.RST 按键:** 系统复位按键
+- **15.RST Key:** system reset key.
 
-- **16.PWR 按键:** 长按约8S关机；短按可开机
+- **16.PWR Button:** Long press about 8S to shut down, short press to boot.
 
-- **17.User 按键:** 用户可编程按键
+- **17.User Button:** User programmable buttons.
 
-- **18.PWR LED:** 开发板电源灯
+- **18.PWR LED:** Development board power led.
 
-- **19.User LED:** 用户可编程LED
+- **19.User LED:** User programmable led.
 
-- **20.ACA-5036-A2-CC-S:** 板载2.4G陶瓷天线
+- **20.ACA-5036-A2-CC-S:** Onboard 2.4G ceramic antenna.
 
-- **21.IPEX 1代:** 外接2.4G外接天线座子(使用外接天线时,需要移除R49,焊上R51 0Ω)
+- **21.The IPEX 1 generation:** External 2.4 G external antenna seat(When using an external antenna, need remove R49, R51 0Ω welding)
 
-- **22.SD卡槽:**  插入装有系统的micro-SD卡的区域
+- **22.SD card slot:** Is the area where a micro-sd card with the system is inserted.
 
-- **23.DVP摄像机接口:** 连接带DVP接口的摄像头(FPC 20Pin 1.0mm)
+- **23.DVP camera interface :** Connect to camera with DVP interface (FPC 20Pin 1.0mm).
 
-- **24.KSZ9031:** 1000M网线驱动网卡
+- **24.KSZ9031:** 1000M Network cable drive network card.
 
-- **25.STMPS2252MTR:** 电源开关芯片
+- **25.STMPS2252MTR:** Power switch chip.
 
-- **26.MP9943:** Buck DCDC 电源芯片
+- **26.MP9943:** Buck DCDC Power chip.
 
-- **27.WM8960:** 音频编解码芯片
+- **27.WM8960:** Audio codec chip.
 
-- **28.MP2161:** Buck DCDC 电源芯片
+- **28.MP2161:** Buck DCDC Power chip.
 
-### 引脚功能
+### Pin Function
 
 ![](https://github.com/SeeedDocument/Seeed-NPi-STM32MP157C/raw/master/IMG/GPIO.png)
 
-ODYSSEY – STM32MP157C 的40-PIN完全兼容树莓派的40PIN,包括GPIO,I2C,UART,SPI,I2S引脚.
+Seeed NPi-STM32MP157C's 40-pin is fully compatible with Raspberry Pi's 40PIN, including GPIO, IIC, UART, SPI, IIS and PWM pins, as described below.
 
-## 软件入门指导
+## Introduction To Software
 
-### 准备工作
+### Preparatory Work
 
-**准备材料**
 
-- ODYSSEY – STM32MP157C 
-- Wi-Fi 网络
-- 4GB (或更大) SD 卡和 SD 读卡器
-- PC 或 Mac
-- [USB To Uart Adapter](https://www.seeedstudio.com/USB-To-Uart-5V%26amp%3B3V3-p-1832.html) (可选的)
-- 用于供电的12V/2ADC接口适配器 (可选的)
-- 一根 USB Type-C 线
+**Materials Required**
+
+- ODYSSEY – STM32MP157C
+- Wi-Fi network
+- 4GB (or more memory) SD card and SD card reader
+- PC or Mac
+- [USB To Uart Adapter](https://www.seeedstudio.com/USB-To-Uart-5V%26amp%3B3V3-p-1832.html) (optional)
+- 12V/2A DC interface adapter for power supply (optional)
+- A USB type-c cable
 
 <div class="admonition warning">
-<p class="admonition-title">注意</p>
-请轻轻插入 USB 线,否则可能会损坏接口.请使用内部有 4 根线的 USB 线,2 根线的不能传输数据.如果您不确定您的线,可以点击 <a href="https://www.seeedstudio.com/Micro-USB-Cable-48cm-p-1475.html"><B>此处</B></a> 购买
+<p class="admonition-title">notice</p>
+Please insert the USB cable gently, otherwise the interface may be damaged. Please use the USB cable with 4 internal cables, and the USB cable with 2 cables cannot transfer data. If you are not sure, you can click <a href="https://www.seeedstudio.com/Micro-USB-Cable-48cm-p-1475.html"><B>HERE</B></a> to buy.
 </div>
 
 
-**镜像安装**
+**Mirror Installation**
 
-与 Raspberry Pi 类似,您需要从 SD 卡安装 ODYSSEY – STM32MP157C  映像才能启动并运行.我们提供两种启动 ODYSSEY – STM32MP157C  的方法.您可以从 SD 卡启动或从 eMMC 启动.
+Like Raspberry Pi, you need to install the ODYSSEY – STM32MP157C image from your SD card to get it up and running. We offer two ways to start ODYSSEY – STM32MP157C. You can boot from an SD card or from eMMC.
 
-**A. 从 SD 卡启动**
+**A. Boot from SD card**
 
-点击此处下载 [固件](https://github.com/Seeed-Studio/seeed-linux-images),进入`STM32MP1`文件夹选择你想下载的固件
+Click here to download [Firmware](https://github.com/Seeed-Studio/seeed-linux-images), go to the `STM32MP1` folder and select the firmware you want to download.
 
 
-- **步骤 1.** 进入`STM32MP1`文件夹选择你想下载的固件 :
+- **Step 1.** Go to the `STM32MP1` folder and select the firmware you want to download:
 
-- **步骤 2.** 用 SD 读卡器将 SD 卡接入 PC 或 MAC.需要大于 4G 的 SD 卡.
+- **Step 2.** Connect an SD card to a PC or MAC with an SD card reader, an SD card with more than 4G memory is required.
 
-- **步骤 3.** <font face="">点击此处下载 <a href="https://etcher.io/">Etcher</a>,然后使用 Etcher 将 ```*.img.xz``` 文件直接写入到 SD 卡.或者将 ```*.img.xz``` 文件解压缩为 ```*.img``` 文件,然后用其他镜像写入工具将其刻录到 SD 卡.
+- **Step 3.** <font face="">Click here to download <a href="https://etcher.io/">Etcher</a>, then use the Etcher to write the  ```*.img.xz``` file directly to the SD card. Or extract the ```*.img.xz``` file into a ```*.img``` file, and then burn it to an SD card using another mirror write tool. 
 <br>
-<br>点击加号图标添加刚下载的镜像文件,软件会自动选择您插入的 SD 卡.然后点击 Flash！开始写入.大约需要 10 分钟完成.</font>
+<br>Click the plus icon to add the newly downloaded image file and the software will automatically select the SD card you inserted. Then click Flash! writing. It takes about 10 minutes to finish.</font>
 
 ![](https://github.com/SeeedDocument/Respeaker_V2/raw/master/img/v2-flash-sd.png)
 
 
-- **步骤 4.** 将镜像写入 SD 卡后,将 SD 卡插入 ODYSSEY – STM32MP157C  .使用 USB Type-C 端口为主板供电,写入过程中请勿取出 SD 卡.ODYSSEY – STM32MP157C  将从 SD 卡启动,您可以看到 PWR 和 USER LED 点亮.USER 配置为启动时以心跳模式闪烁.现在,转到下一部分 : 串口控制台.
+- **Step 4.** After writing the image to the SD card, insert the SD card into ODYSSEY – STM32MP157C. Use USB type-c port to power the motherboard. Do not take out the SD card during writing. ODYSSEY – STM32MP157C will boot from the SD card, you can see the PWR and USER LED lighting. Now, go to the next section: the serial console.
 
-**B. 从 eMMC 卡启动**
+**B. Boot from eMMC card**
 
-点击此处下载 [固件](https://github.com/Seeed-Studio/seeed-linux-images),进入`STM32MP1`文件夹选择你想下载的固件.
+Click here to download [firmware](https://github.com/Seeed-Studio/seeed-linux-images) and go to the `STM32MP1` folder to select the firmware you want to download.
 
-- **步骤 1.** 进入`STM32MP1`文件夹选择你想下载的固件 :
+- **Step 1.** Go to`STM32MP1` folder to select the firmware you want to download.
 
-- **步骤 2.** 用 SD 读卡器将 SD 卡接入 PC 或 MAC.需要大于 4G 的 SD 卡.
+- **Step 2.** Connect an SD card to a PC or MAC with an SD card reader, an SD card with more than 4G memory is required.
 
-- **步骤 3.** <font face="">点击此处下载 <a href="https://etcher.io/">Etcher</a>,然后使用 Etcher 将 ```*.img.xz``` 文件直接写入到 SD 卡.或者将 ```*.img.xz``` 文件解压缩为 ```*.img``` 文件,然后用其他镜像写入工具将其刻录到 SD 卡.
+- **Step 3.** <font face="">Click here to download <a href="https://etcher.io/">Etcher</a>, then use the Etcher to write the  ```*.img.xz``` file directly to the SD card. Or extract the ```*.img.xz``` file into a ```*.img``` file, and then burn it to an SD card using another mirror write tool. 
 <br>
-<br>点击加号图标添加刚下载的镜像文件,软件会自动选择您插入的 SD 卡.然后点击 Flash！开始写入.大约需要 10 分钟完成.</font>
+<br>Click the plus icon to add the newly downloaded image file, and the software will automatically select the SD card you inserted. Then click Flash! Start writing. Takes about 10 minutes to complete.</font>
 
 ![](https://github.com/SeeedDocument/Respeaker_V2/raw/master/img/v2-flash-sd.png)
 
-- **步骤 4.** 将镜像写入 SD 卡后,将 SD 卡插入 ODYSSEY – STM32MP157C  .使用 USB Type-C 端口为主板供电,写入过程中请勿取出 SD 卡.ODYSSEY – STM32MP157C  将从 SD 卡启动,您可以看到 PWR 和 USER LED 点亮.USER 配置为启动时以心跳模式闪烁.
+- **Step 4.** After writing the image to the SD card, insert the SD card into ODYSSEY – STM32MP157C. use USB type-c port to power the motherboard, do not take out the SD card during writing. ODYSSEY – STM32MP157C will start from the SD card, and you can see the PWR and USER LED light up.
 
-- **步骤 5.** 将滑动开关拨到eMMC,然后重启即可.
+- **Step 5.** Set the slide switch to eMMC and restart.
 
-**串口控制台**
+**Serial Console**
 
-现在您的ODYSSEY – STM32MP157C 已经启动了,您可能希望通过控制台访问 Linux 系统,然后来设置 WiFi 等.提供了两种串口访问方式进行linux访问:
+Now your ODYSSEY – STM32MP157C is up, you may want to access your Linux system through the console, then set up WiFi, and so on. Two serial port access methods are provided for Linux access: 
 
-- A. OTG USB 端口 - 需要在电路板上运行 Linux 系统
+- A. OTG USB port - You need to run a Linux system on a circuit board.
 
-- B. UART 端口 - 用于调试低级问题
+- B. UART port - Used to debug low-level problems.
 
-**A. 通过 OTG 连接**
+**A. Connect via OTG**
 
-- **步骤 1.** 找一条  USB Type-C 线,并确保它是数据线,插入 ODYSSEY – STM32MP157C  的 USB Type-C 端口 ,然后将 USB Type-C 线的另一端插入电脑.
+- **Step 1.** Take a USB type-c cable and make sure it's a data cable, plug it into ODYSSEY – STM32MP157C's USB type-c port, and then plug the other end of the USB type-c cable into your computer. 
 
-- **步骤 2.** 检查计算机串口是否启用 :
+- **Step 2.** Check whether the computer serial port is enabled:
 
-    - Windows : 检查设备管理器,应该有新的串行设备名为 ```COMx```,其中 x 是一个越来越大的数字.如果您使用 windows XP/7/8,也许需要安装 [windows CDC 驱动程序](https://github.com/respeaker/get_started_with_respeaker/blob/master/files/ReSpeaker_Gadget_CDC_driver.7z).
-    - Linux : ls ```/dev/ttyACM*```,应该得到 ```/dev/ttyACMx``` 其中 x 取决于您使用的 USB 端口.
-    - Mac : ls ```/dev/cu.usb*```,应该得到 ```/dev/cu.usbmodem14xx``` 其中 xx 取决于您使用的 USB 端口.
-
-
-- **步骤 3.** 使用您最喜欢的串口调试工具来连接串口,串口有 : 115200 波特率,8 位,奇偶校验无,停止位 1,流量控制无.举些例子 :
-
-    - Windows : 使用 [PUTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html),选择 ```Serial``` 协议,填入 ODYSSEY – STM32MP157C  对应的 COM 端口,```115200``` 波特率,8 位,奇偶校验无,停止位 1,流量控制无.
-    - Linux : 取决于 USB To TTL Adapter,应该是 ```screen /dev/ttyACM0(,1, and so on) 115200``` 或 ```screen /dev/ttyUSB0(,1, and so on) 115200```
-    - Mac : 取决于 USB To TTL Adapter,应该是 ```screen /dev/cu.usbserial1412(,1422, and so on) 115200``` 或 ```screen /dev/cu.usbmodem1412(,1422, and so on) 115200```
+    - Windows : Check the device manager, there should be a new serial device named ```COMx```, x is a bigger and bigger number. If you are using Windows XP/7/8, you may need to install [windows CDC driver](https://github.com/respeaker/get_started_with_respeaker/blob/master/files/ReSpeaker_Gadget_CDC_driver.7z).
+    - Linux : ls ```/dev/ttyACM*```, should be ```/dev/ttyACMx``` x depends on the USB port you use.
+    - Mac : ls ```/dev/cu.usb*```, should be ```/dev/cu.usbmodem14xx``` xx depends on the USB port you use.
 
 
-- **步骤 4.** 默认用户名是 ```debian```,密码是 ```temppwd```
+- **Step 3.** Use your favorite serial debugging tool to connect to serial ports: 115200 baud rate, 8 bits, no parity bits, a stop bit 1, no flow control. Here are some examples:
 
-**B. 通过 UART 端口连接**
+    - Windows : Use [PUTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html), select ```Serial``` protocol, fill in the COM port corresponding to Seeed NPi-STM32MP157C,```115200``` baud rate, 8 bit, no parity bits, a stop bit 1, no flow control.
+    - Linux : Depending on the USB To TTL Adapter, should be ```screen /dev/ttyACM0(,1, and so on) 115200``` or ```screen /dev/ttyUSB0(,1, and so on) 115200```.
+    - Mac : Depending on the USB To TTL Adapter, should be ```screen /dev/cu.usbserial1412(,1422, and so on) 115200``` or ```screen /dev/cu.usbmodem1412(,1422, and so on) 115200```.
 
-在本节中,我们将引导您使用将连接到 ODYSSEY – STM32MP157C  的 Uart 端口 (位于 ODYSSEY – STM32MP157C  右上方) 的 USB 转 TTL 适配器,建立计算机与 ODYSSEY – STM32MP157C  的连接.
 
-- **步骤 1.** 使用 USB To TTL Adapter 连接 Uart 端口和 PC/Mac.请注意,RX/TX 的电压为 3.3V.如果您没有 USB To TTL Adapter,点击 [此处](https://item.taobao.com/item.htm?id=550981934087) 购买.（RX->TX,TX->RX）
+- **Step 4.** The default user name is ```debian```, the password is ```temppwd```.
 
-- **步骤 2.** 使用以下串口调试工具,波特率为 115200 :
-    - Windows : 使用 [PUTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html),选择 ```Serial``` 协议,填入 ODYSSEY – STM32MP157C  对应的 COM 端口,```115200``` 波特率,8 位,奇偶校验无,停止位 1,流量控制无.
-    - Linux : 取决于 USB To TTL Adapter,应该是 ```screen /dev/ttyACM0(,1, and so on) 115200``` 或 ```screen /dev/ttyUSB0(,1, and so on) 115200```.
-    - Mac : 取决于 USB To TTL Adapter,应该是 ```screen /dev/cu.usbserial1412(,1422, and so on) 115200``` 或 ```screen /dev/cu.usbmodem1412(,1422, and so on) 115200```.
+**B. Connect via UART port**
 
-- **步骤 3.** 默认用户名是 ```debian```,密码是 ```temppwd```
+In this section, we'll walk you through the use of the USB to TTL adapter, which connects to the ODYSSEY – STM32MP157C's Uart port(Located at the upper right of ODYSSEY – STM32MP157C), to establish a connection between your computer and Seeed NPi-STM32MP157C.
 
-- **步骤 4.** 如果没有 USB to TTL Adapter,也可以使用 Arduino.如果使用 Arduino,将跳线的一端连接到 Arduino 的 RESET 引脚,另一端连接到 Arduino 的 GND 引脚.这将绕过您的 Arduino 的 ATMEGA MCU,并将您的 Arduino 转换为一个 USB to TTL adapter,请参看 [此处](https://www.youtube.com/watch?v=qqSLwK1DP8Q) 的视频教程.现在将 Arduino 的 GND 引脚连接到 ODYSSEY – STM32MP157C  的 Uart 端口的 GND 引脚.将 Arduino 上的 Rx 引脚连接到 ODYSSEY – STM32MP157C  的 Uart 端口上的 Rx 引脚.将 Arduino 上的 Tx 引脚连接到 ODYSSEY – STM32MP157C  的 Uart 端口上的 Tx 引脚.最后,通过 Arduino 的 USB 电缆将 Arduino 连接到 PC/Mac.现在通过输入以下命令检查您的 PC/Mac 是否找到您的 Arduino :
+- **Step 1.** Connect Uart port To PC/Mac using USB To TTL Adapter. Note: The voltage of RX/TX is 3.3v. If you don't have USB To TTL Adapter, click [HERE](https://item.taobao.com/item.htm?id=550981934087) to buy.（RX->TX,TX->RX）
+
+- **Step 2.** Using the following serial debugging tools, the baud rate is 115200:
+    - Windows : Use [PUTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html), select ```Serial``` protocol, fill in the COM port corresponding to Seeed NPi-STM32MP157C,```115200``` baud rate, 8 bit, no parity bits, a stop bit 1, no flow control.
+    - Linux : Depending on the USB To TTL Adapter, should be ```screen /dev/ttyACM0(,1, and so on) 115200``` or ```screen /dev/ttyUSB0(,1, and so on) 115200```.
+    - Mac : Depending on the USB To TTL Adapter, should be ```screen /dev/cu.usbserial1412(,1422, and so on) 115200``` or ```screen /dev/cu.usbmodem1412(,1422, and so on) 115200```.
+
+- **Step 3.** The default user name is ```debian```, the password is ```temppwd```
+
+- **Step 4.** If you don't have USB to TTL Adapter, you can also use Arduino. If you use Arduino, connect one end of the jumper to the Arduino's RESET pin and the other end to the Arduino's GND pin. This will bypass your Arduino's ATMEGA MCU and turn your Arduino into a USB to TTL adapter. Please refer [HERE](https://www.youtube.com/watch?v=qqSLwK1DP8Q) Video tutorial. Now connect the GND pin of Arduino to the GND pin of Seeed NPi-STM32MP157C's Uart port. Connect Rx pins on Arduino to Rx pins on Seeed NPi-STM32MP157C's Uart port. Connect the Tx pin on the Arduino to the Tx pin on the Seeed NPi-STM32MP157C Uart port. Finally, connect the Arduino to the PC/Mac via the Arduino's USB cable. Now check to see if your PC/Mac has found your Arduino by typing the following command:
 
 ```
 ls /dev/cu.usb* (Mac)
 ls /dev/ttyACM* (Linux)
 ```
-应该得到类似这样的反馈 :
+You should get feedback like this:
 
 ```
 /dev/cu.usbmodem14XX where XX will vary depending on which USB port you used (on Mac)
 /dev/ttyACMX where X will vary depending on which USB port you used  (on Linux)
 ```
-现在按照上述步骤通过串行连接连接到 ODYSSEY – STM32MP157C .一般在我们第一次开机的时候需要做这样的操作,因为接下将对 ODYSSEY – STM32MP157C  进行 Wi-Fi 连接,然后通过 SSH 或 VNC 进行连接.
+Now follow the steps above to connect to ODYSSEY – STM32MP157C via a serial connection. This is usually what we need to do when we first boot up, as you will then set up ODYSSEY – STM32MP157C for Wi-Fi connection and then SSH or VNC connection.
 
-**网络设置**
+**Network Settings**
 
-**A. Wi-Fi 设置**
+**A. Wi-Fi Settings**
 
-通过网络管理工具`connmanctl`配置 ODYSSEY – STM32MP157C  的网络,`connmanctl`已经安装在 ODYSSEY – STM32MP157C  的镜像上.按照下面的操作指令就能轻松完成配置.
+Configure the ODYSSEY – STM32MP157C network through the network management tool `connmanctl`, which has been installed on the Seeed NPi-STM32MP157C image. Follow these instructions to easily complete the configuration. 
 
 ```
-debian@npi:~$ sudo connmanctl
+robot@ev3dev:~$ sudo connmanctl
 Error getting VPN connections: The name net.connman.vpn was not provided by any
 connmanctl> enable wifi
 Enabled wifi
@@ -260,31 +262,30 @@ Connected wifi_e8de27077de3_41483034303434393134_managed_psk
 connmanctl> quit
 ```
 
-现在使用下面的命令找到 ODYSSEY – STM32MP157C  的 IP 地址.
-
+Now use the following command to find ODYSSEY – STM32MP157C's IP address. 
 ```
 ifconfig
 ```
 
-**B. 以太网连接**
+**B. Ethernet connection**
 
-您可以使用以太网线连接到网络.只需插上连接到互联网的以太网线即可.
+You can connect to the network using an Ethernet cable. Just plug in the Ethernet cable to the Internet.
 
-**通过 SSH 连接**
+**SSH connection**
 
 **A. SSH**
 
-SSH 为 Secure Shell 的缩写,由 IETF 的网络小组（Network Working Group）所制定；SSH 为建立在应用层基础上的安全协议.SSH 是较可靠,专为远程登录会话和其他网络服务提供安全性的协议.我们的提供的镜像中没有自带ssh这个协议所以我们需要通过串口去进行配置,从而实现通过ssh协议进行设备的与电脑之间的通信.输入下面的命令将在ODYSSEY – STM32MP157C 中安装ssh服务.
+SSH, short for Secure Shell, is formulated by the Network Working Group of IETF. SSH is a security protocol based on the application layer. SSH is a more reliable protocol that provides security for remote login sessions and other network services. There is no SSH protocol in the image provided by us, so we need to configure it through the serial port, so as to realize the communication between the device and the computer through SSH protocol. Enter the following command to install the SSH service in Seeed NPi-STM32MP157C.
 
 ```bash
-sudo apt install ssh -y
+sudo apt-get install ssh -y
 ```
 
-下面,我们将使用SSH对ODYSSEY – STM32MP157C 进行访问,Windows 用户,可用第三方 SSH 客户端.对于 Linux/Mac 用户,则可以使用内置的SSH.
+Next, we'll use SSH to access ODYSSEY – STM32MP157C. Windows users can use third-party SSH clients. For Linux/Mac users, the SSH client is built in.
 
-- Windows 用户 : 使用 PUTTY,选择 SSH 协议,填写正确的 IP 地址并单击 open.用户名是debian,密码是temppwd.
+- Windows users : Use PUTTY, select SSH protocol, fill in the correct IP address and click open. The user name is debian and the password is temppwd.
 
-- Linux/Mac 用户 :
+- Linux/Mac users :
 ```
 ssh debian@IP
 // password: temppwd
@@ -292,112 +293,73 @@ ssh debian@IP
 
 <div class="admonition note" >
 <p class="admonition-title">Note</p>
-请注意,如果使用 SSH 时性能体验下降,请切换到更畅通的 WiFi 网络.
+If the performance experience degrades while using SSH, please switch to a more accessible WiFi network.
 </div>
 
-## CANBUS通信
+## CANBUS Communication
 
-下面是基于ODYSSEY – STM32MP157C 利用[2 Channel CAN BUS FD Shield for Raspberry Pi](https://www.seeedstudio.com/2-Channel-CAN-BUS-FD-Shield-for-Raspberry-Pi-p-4072.html)进行CANBUS通信的历程,首先利用[Seeeduino V4.2](https://www.seeedstudio.com/Seeeduino-V4-2-p-2517.html)采集环境的温度和湿度然后通过Seeeduino V4.2上面的[CAN-BUS Shield V2](https://www.seeedstudio.com/CAN-BUS-Shield-V2.html)与ODYSSEY – STM32MP157C 上面的2 Channel CAN BUS FD Shield for Raspberry Pi通信。
+The following is the process of CANBUS communication using [2 Channel CAN BUS FD Shield for Raspberry Pi](https://www.seeedstudio.com/2-Channel-CAN-BUS-FD-Shield-for-Raspberry-Pi-p-4072.html) based on ODYSSEY -- STM32MP157C, first use [Seeeduino V4.2](https://www.seeedstudio.com/Seeeduino-V4-2-p-2517.html) to collect the environment temperature and humidity, and then through the Seeeduino V4.2 [CAN - BUS shields V2](https://www.seeedstudio.com/CAN-BUS-Shield-V2.html) above and the ODYSSEY – STM32MP157C Channel 2 CAN BUS FD shields above for Raspberry Pi communication.
 
-### 准备工作
+###Preparation Work
 
-**准备材料**
+**Materials Required**
 
-- ODYSSEY – STM32MP157C 
-- Wi-Fi 网络
-- 4GB (或更大) SD 卡和 SD 读卡器
-- PC 或 Mac
-- [USB To Uart Adapter](https://www.seeedstudio.com/USB-To-Uart-5V%26amp%3B3V3-p-1832.html) (可选的)
-- 用于供电的12V/2ADC接口适配器 (可选的)
-- 一根 USB Type-C 线
-- 两根双公头杜邦线
+- ODYSSEY - STM32MP157C
+- Wi-Fi network
+- 4GB (or more than 4GB) SD card and SD card reader
+- PC or Mac
+- [USB To Uart Adapter](https://www.seeedstudio.com/USB-To-Uart-5V%26amp%3B3V3-p-1832.html)(optional)
+- 12V/2ADC interface adapter for power supply (optional)
+- A USB type-c cable
+- Two double-male dupont lines
 - [CAN-BUS Shield V2](https://www.seeedstudio.com/CAN-BUS-Shield-V2.html)
 - [Seeeduino V4.2](https://www.seeedstudio.com/Seeeduino-V4-2-p-2517.html)
 - [2 Channel CAN BUS FD Shield for Raspberry Pi](https://www.seeedstudio.com/2-Channel-CAN-BUS-FD-Shield-for-Raspberry-Pi-p-4072.html)
 - [Grove - Light Sensor v1.2](https://www.seeedstudio.com/Grove-Light-Sensor-v1-2.html)
 - [Grove - I2C High Accuracy Temp&Humi Sensor (SHT35)](https://www.seeedstudio.com/catalogsearch/result/?q=sht35)
 
-**硬件连接**
+**Hardware Connection**
 
-- **步骤 1.** 根据[安装指南](http://wiki.seeedstudio.com/2-Channel-CAN-BUS-FD-Shield-for-Raspberry-Pi/#mounting-guide)将2 Channel CAN BUS FD Shield for Raspberry Pi插入到ODYSSEY – STM32MP157C上面
-
-- **步骤 2.** 将 CAN BUS Shield V2 插入 Seeeduino V4.2
-
-- **步骤 3.** 使用杜邦线将2 Channel CAN BUS FD Shield for Raspberry Pi将CAN-BUS Shield V2进行连接
+- **Step 1.** According to the [installation guide](http://wiki.seeedstudio.com/2-Channel-CAN-BUS-FD-Shield-for-Raspberry-Pi/#mounting-guide) insert 2 Channel CAN BUS FD Shield for Raspberry Pi onto ODYSSEY STM32MP157C.
+- **Step 2.** Insert CAN BUS Shield V2 into Seeeduino V4.2.
+- **Step 3.** Connect Channel CAN BUS FD Shield for Raspberry Pi to can-bus Shield V2 using dupont wire.
 
 |2 Channel CAN BUS FD Shield for Raspberry Pi|CAN-BUS Shield V2|
 |:----:|:------:|
 |CAN_0_L|CANL|
 |CAN_0_H|CANH|
 
-- **步骤 4.** 将ODYSSEY – STM32MP157C 和Seeeduino V4.2供电
+- **Step 4.** Power ODYSSEY STM32MP157C and Seeeduino V4.2
 
-**依赖项安装**
+**Dependency installation**
 
-- **步骤 1.** 安装`python`的相关环境
-
-```bsah
-sudo apt update
-sudo apt install python3 python3-distutils python3-pyqt5  python3-pip python3-numpy -y
-sudo pip3 install python-can pyqtgraph
-```
-- **步骤 2.** 安装`git`
+- **Step 1.** Install the environment for `python`.
 
 ```bsah
-sudo apt install git -y
+sudo apt-get update
+sudo apt-get install python3 python3-distutils python3-pyqt5  python3-pip python3-numpy -y
+sudo pip3 install python-can
+git clone --depth=1 https://github.com/pyqtgraph/pyqtgraph.git
+cd ~/pyqtgraph
+sudo python3 setup.py install
 ```
-
-- **步骤 3.** 安装`make`相关环境
+- **Step 2.** Install `git`.
 
 ```bsah
-sudo apt install make device-tree-compiler gcc -y
+sudo apt-get install git -y
 ```
 
-### 软件安装
+- **Step 3.** Install the `make` related environment.
 
-**安装CAN-HAT和LCD驱动**
-
-- **步骤 1.** 检测当前linux的内核版本并安装对应的头文件
-
-```bash
-dpkg -l | grep linux
-sudo apt install linux-headers-$(uname -r) -y
+```bsah
+sudo apt-get install make device-tree-compiler gcc -y
 ```
 
-- **步骤 2.** 从github上面获取`seeed-linux-dtverlays`编译并安装对应的驱动
+### software installation
 
-```bash
-git clone https://github.com/Seeed-Studio/seeed-linux-dtverlays
-cd seeed-linux-dtverlays
-make all_stm32mp1 && sudo make install_stm32mp1
-```
+**Install CAN-HAT and LCD drivers**
 
-- **步骤 3.** 将编译好的`dtbo`文件加载到`/boot/uEnv.txt`中,重启使其生效.
-
-```bash
-sudo echo uboot_overlay_addr0=/lib/firmware/stm32mp1-seeed-lcd-01-overlay.dtbo >> /boot/uEnv.txt
-sudo echo uboot_overlay_addr1=/lib/firmware/stm32mp1-MCP2517FD-can0-overlay.dtbo >> /boot/uEnv.txt
-sudo reboot
-```
-- **步骤 4.** 使用`dmesg`查看设备是否安装成功，安装成功会出现下面的信息.
-```bash
-debian@npi:~$ sudo insmod /lib/modules/$(uname -r)/extra/seeed/mcp25xxfd-can.ko
-debian@npi:~$ dmesg | grep spi
-[    1.057609] spi_stm32 44009000.spi: driver initialized
-[    9.852726] mcp25xxfd spi0.0: Linked as a consumer to regulator.6
-[    9.966510] mcp25xxfd spi0.0: MCP2517 successfully initialized.
-
-debian@npi:~$ ifconfig -a
-can0: flags=128<NOARP>  mtu 16
-        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 10  (UNSPEC)
-        RX packets 0  bytes 0 (0.0 B)
-        RX errors 0  dropped 0  overruns 0  frame 0
-        TX packets 0  bytes 0 (0.0 B)
-        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
-```
-**配置CAN-HAT和LCD**
-
-- **步骤 1.** 配置`can-bus`
+- **Step 1.** Configure `can-bus`
 
 ```bash
 sudo ip link set can0 up type can bitrate 500000 dbitrate 8000000 restart-ms 1000 berr-reporting on fd on
@@ -414,15 +376,16 @@ debian@npi:~$ ip -details link show can0
           clock 40000000numtxqueues 1 numrxqueues 1 gso_max_size 65536 /gso_max_segs 65535
 ```
 
-- **步骤 2.** 配置`lcd`环境
+- **Step 2.** Configure the `lcd` environment
+
 
 ```bash
 export QT_QPA_PLATFORM=linuxfb:fb=/dev/fb0
 ```
 
-### 运行Demo
+### Run the Demo
 
-在`ODYSSEY – STM32MP157C`上面运行下面的代码
+Run the following code on 'ODYSSEY - STM32MP157C'
 
 ```bash
 cd ~
@@ -430,15 +393,14 @@ git clone https://github.com/SeeedDocument/Seeed-NPi-STM32MP157C.git
 cd ~/Seeed-NPi-STM32MP157C/examples
 python3 QtViewerForStm32p1.py
 ```
-在`Seeeduino V4.2`上面运行[CanBus_SendForArduino.ino](https://github.com/SeeedDocument/Seeed-NPi-STM32MP157C/blob/master/examples/CanBus_SendForArduino.ino).
 
+Run [CanBus_SendForArduino.ino](https://github.com/SeeedDocument/Seeed-NPi-STM32MP157C/blob/master/examples/CanBus_SendForArduino.ino) on `Seeeduino V4.2`.
 
-## 资源下载
+## Resourses
 -----
 - **[PDF]** [STM32MP157C Datasheet](https://github.com/SeeedDocument/Seeed-NPi-STM32MP157C/raw/master/Hardware/stm32mp157c.pdf)
 - **[SCH]** [Seeed STM32MP157C SOM](https://github.com/SeeedDocument/Seeed-NPi-STM32MP157C/raw/master/Hardware/Seeed%20SoM%20-%20STM32MP157C%20v1.0_191212.pdf)
 - **[SCH]** [Seeed STM32MP157C NPi](https://github.com/SeeedDocument/Seeed-NPi-STM32MP157C/raw/master/Hardware/Seeed%20NPi%20-%20STM32MP157C%20v1.0_191212.pdf)
 
-## 技术支持
-
-您可以将技术问题发送到 [forum](http://forum.seeedstudio.com/). <br /><p style="text-align:center"><a href="https://www.seeedstudio.com/act-4.html?utm_source=wiki&utm_medium=wikibanner&utm_campaign=newproducts" target="_blank"><img src="https://github.com/SeeedDocument/Wiki_Banner/raw/master/new_product.jpg" /></a></p>
+## Tech Support
+Please submit any technical issue into our [forum](http://forum.seeedstudio.com/). <br /><p style="text-align:center"><a href="https://www.seeedstudio.com/act-4.html?utm_source=wiki&utm_medium=wikibanner&utm_campaign=newproducts" target="_blank"><img src="https://github.com/SeeedDocument/Wiki_Banner/raw/master/new_product.jpg" /></a></p>
