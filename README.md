@@ -10,7 +10,7 @@ sku: 102010048
 
 # ODYSSEY – STM32MP157C
 
- ![](https://github.com/SeeedDocument/ODYSSEY-STM32MP157C/raw/master/IMG/overview.png)
+ ![](https://github.com/SeeedDocument/ODYSSEY-STM32MP157C/raw/master/IMG/perspective-19.png)
 
 The ODYSSEY – STM32MP157C is a single board computer that based on STM32MP157C, a dual-core Arm-Cortex-A7 core processor operating at 650Mhz. The processor also integrates an Arm Cortex-M4 coprocessor, which makes it suitable for real-time task. The ODYSSEY – STM32MP157C is created in a form of SoM(system on module) plus a Carrier board. The SoM has consisted of the MPU, PMIC, RAM and the carrier board is in Raspberry Pi form factor. The carries board includes all the necessary peripherals including Gigabytes Ethernet, WiFi/BLE, DC Power，USB Hosts, USB-C, MIPI-DSI, DVP for camera, audio, etc. With this board, customers can fast evaluate the SoM and deploy the SoM on their own carrier board easily and quickly.
 
