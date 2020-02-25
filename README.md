@@ -339,10 +339,7 @@ The following is the process of CANBUS communication using [2 Channel CAN BUS FD
 ```bsah
 sudo apt update
 sudo apt install python3 python3-distutils python3-pyqt5  python3-pip python3-numpy -y
-sudo pip3 install python-can
-git clone --depth=1 https://github.com/pyqtgraph/pyqtgraph.git
-cd ~/pyqtgraph
-sudo python3 setup.py install
+sudo pip3 install python-can pyqtgraph
 ```
 - **Step 2.** Install `git`.
 
