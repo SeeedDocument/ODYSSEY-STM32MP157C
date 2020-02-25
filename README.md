@@ -1,11 +1,9 @@
 ---
 name: ODYSSEY – STM32MP157C 
-category: ODYSSEY – STM32MP157C 
-bzurl: https://www.seeedstudio.com/SeeedStudio-BeagleBone-Green-Wireless-p-2650.html
-oldwikiname: SeeedStudio_BeagleBone_Green_Wireless
-prodimagename: BBGW_cover.png
-wikiurl: http://wiki.seeedstudio.com/cn/BeagleBone_Green_Wireless
-sku: 102010048
+category: ODYSSEY
+bzurl: https://www.seeedstudio.com/ODYSSEY-STM32MP157C-p-4464.html
+wikiurl: http://wiki.seeedstudio.com/ODYSSEY-STM32MP157C/
+sku: 102110319
 ---
 
 # ODYSSEY – STM32MP157C
