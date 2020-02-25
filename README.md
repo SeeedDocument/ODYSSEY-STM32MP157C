@@ -116,6 +116,10 @@ Carrier board hardware details follow:
 
 ODYSSEY - STM32MP157C's 40-pin is fully compatible with Raspberry Pi's 40PIN, including GPIO, IIC, UART, SPI, IIS and PWM pins.
 
+
+<iframe src="https://3dwarehouse.sketchup.com/embed/6eecf961-5dd1-4baf-94e4-72f130c5542d" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="580" height="326" allowfullscreen></iframe>
+
+
 ## Introduction To Software
 
 ### Preparatory Work
