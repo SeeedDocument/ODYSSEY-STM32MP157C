@@ -43,8 +43,11 @@ The ODYSSEY – STM32MP157C is a single board computer that based on STM32MP157C
 - White goods(refrigerators,microwaves etc )
 - Medical(data loggers etc)
 - High-end wearables(VR device etc)
+- Smart Home Devices
 
 ## Hardware Overview
+
+<iframe src="https://3dwarehouse.sketchup.com/embed/6eecf961-5dd1-4baf-94e4-72f130c5542d" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="580" height="326" allowfullscreen></iframe>
 
 ODYSSEY – STM32MP157C consists of two parts: Carrier board and Seeed SoM - STM32MP157C.
 
@@ -54,7 +57,7 @@ Carrier board hardware details follow:
 
  ![](https://github.com/SeeedDocument/ODYSSEY-STM32MP157C/raw/master/IMG/back.png)
 
-- **1.Seeed SoM-STM32MP157C Slot :** Install the Seeed SoM-STM32MP157C area, if the user wants to remove the core board, slowly tilt the core board up and then remove, never remove by hand.
+- **1.Carrier board :** Install the Seeed SoM-STM32MP157C area, if the user wants to remove the core board, slowly tilt the core board up and then remove, never remove by hand.
 
 - **2.DC Power Input Port :** 12V~24V/2A (12V/2A power input is recommended).
 
@@ -116,10 +119,6 @@ Carrier board hardware details follow:
 
 ODYSSEY - STM32MP157C's 40-pin is fully compatible with Raspberry Pi's 40PIN, including GPIO, IIC, UART, SPI, IIS and PWM pins.
 
-
-<iframe src="https://3dwarehouse.sketchup.com/embed/6eecf961-5dd1-4baf-94e4-72f130c5542d" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="580" height="326" allowfullscreen></iframe>
-
-
 ## Introduction To Software
 
 ### Preparatory Work
@@ -138,7 +137,6 @@ ODYSSEY - STM32MP157C's 40-pin is fully compatible with Raspberry Pi's 40PIN, in
 <p class="admonition-title">Caution</p>
 Please plug the USB cable gently, otherwise you may damage the interface.Please use the USB cable with 4 wires inside, the 2 wires cable can't transfer data. If you are not sure about the wire you have, you can click <a href="https://www.seeedstudio.com/Micro-USB-Cable-48cm-p-1475.html"><B>here</B></a> to buy
 </div>
-
 
 **Mirror Installation**
 
