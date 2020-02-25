@@ -14,7 +14,7 @@ sku: 102010048
 
 The ODYSSEY – STM32MP157C is a single board computer that based on STM32MP157C, a dual-core Arm-Cortex-A7 core processor operating at 650Mhz. The processor also integrates an Arm Cortex-M4 coprocessor, which makes it suitable for real-time task. The ODYSSEY – STM32MP157C is created in a form of SoM(system on module) plus a Carrier board. The SoM has consisted of the MPU, PMIC, RAM and the carrier board is in Raspberry Pi form factor. The carries board includes all the necessary peripherals including Gigabytes Ethernet, WiFi/BLE, DC Power，USB Hosts, USB-C, MIPI-DSI, DVP for camera, audio, etc. With this board, customers can fast evaluate the SoM and deploy the SoM on their own carrier board easily and quickly.
 
-[![Get one now](https://raw.githubusercontent.com/SeeedDocument/Seeed-WiKi/master/docs/images/get_one_now.png)](https://www.seeedstudio.com/1.5W-Solar-Panel-81X137-p-952.html)
+[![Get one now](https://raw.githubusercontent.com/SeeedDocument/Seeed-WiKi/master/docs/images/get_one_now.png)](https://www.seeedstudio.com/ODYSSEY-STM32MP157C-p-4464.html)
 
 
 ## Features
@@ -46,9 +46,9 @@ The ODYSSEY – STM32MP157C is a single board computer that based on STM32MP157C
 
 ## Hardware Overview
 
-ODYSSEY – STM32MP157C consists of two parts: Seeed SoM - STM32MP157C breakout board and Seeed SoM - STM32MP157C.
+ODYSSEY – STM32MP157C consists of two parts: Carrier board and Seeed SoM - STM32MP157C.
 
-Seeed SoM - STM32MP157C breakout board hardware details follow:
+Carrier board hardware details follow:
 
  ![](https://github.com/SeeedDocument/ODYSSEY-STM32MP157C/raw/master/IMG/front.png)
 
@@ -96,7 +96,7 @@ Seeed SoM - STM32MP157C breakout board hardware details follow:
 
 - **21.The IPEX 1 generation:** External 2.4 G external antenna seat(When using an external antenna, need remove R49, R51 0Ω welding)
 
-- **22.SD card slot:** Is the area where a micro-sd card with the system is inserted.
+- **22. SD card slot:** Is the area where a micro-sd card with the system is inserted.
 
 - **23.DVP camera interface :** Connect to camera with DVP interface (FPC 20Pin 1.0mm).
 
@@ -120,7 +120,6 @@ ODYSSEY - STM32MP157C's 40-pin is fully compatible with Raspberry Pi's 40PIN, in
 
 ### Preparatory Work
 
-
 **Materials Required**
 
 - ODYSSEY – STM32MP157C
@@ -132,8 +131,8 @@ ODYSSEY - STM32MP157C's 40-pin is fully compatible with Raspberry Pi's 40PIN, in
 - A USB type-c cable
 
 <div class="admonition warning">
-<p class="admonition-title">notice</p>
-Please insert the USB cable gently, otherwise the interface may be damaged. Please use the USB cable with 4 internal cables, and the USB cable with 2 cables cannot transfer data. If you are not sure, you can click <a href="https://www.seeedstudio.com/Micro-USB-Cable-48cm-p-1475.html"><B>HERE</B></a> to buy.
+<p class="admonition-title">Caution</p>
+Please plug the USB cable gently, otherwise you may damage the interface.Please use the USB cable with 4 wires inside, the 2 wires cable can't transfer data. If you are not sure about the wire you have, you can click <a href="https://www.seeedstudio.com/Micro-USB-Cable-48cm-p-1475.html"><B>here</B></a> to buy
 </div>
 
 
@@ -143,10 +142,7 @@ Like Raspberry Pi, you need to install the ODYSSEY – STM32MP157C image from yo
 
 **A. Boot from SD card**
 
-Click here to download [Firmware](https://github.com/Seeed-Studio/seeed-linux-images), go to the `STM32MP1` folder and select the firmware you want to download.
-
-
-- **Step 1.** Go to the `STM32MP1` folder and select the firmware you want to download:
+- **Step 1.** Select the [firmware](https://github.com/Seeed-Studio/seeed-linux-images) you want to download:
 
 - **Step 2.** Connect an SD card to a PC or MAC with an SD card reader, an SD card with more than 4G memory is required.
 
@@ -157,25 +153,27 @@ Click here to download [Firmware](https://github.com/Seeed-Studio/seeed-linux-im
 ![](https://github.com/SeeedDocument/Respeaker_V2/raw/master/img/v2-flash-sd.png)
 
 
-- **Step 4.** After writing the image to the SD card, insert the SD card into ODYSSEY – STM32MP157C. Use USB type-c port to power the motherboard. Do not take out the SD card during writing. ODYSSEY – STM32MP157C will boot from the SD card, you can see the PWR and USER LED lighting. Now, go to the next section: the serial console.
+- **Step 4.** After writing the image to the SD card, insert the SD card into ODYSSEY – STM32MP157C. Use USB type-c port to power the Carrier board. Do not take out the SD card during writing. ODYSSEY – STM32MP157C will boot from the SD card, you can see the PWR and USER LED lighting on SOM. Now, go to the next section: the serial console.
+
+<div class="admonition note" >
+<p class="admonition-title">Note</p>
+they mean to start up failed if the USER LED does not blink.Please check the boot switch whether it is SD_CARD.
+</div>
+    
 
 **B. Boot from eMMC card**
 
-Click here to download [firmware](https://github.com/Seeed-Studio/seeed-linux-images) and go to the `STM32MP1` folder to select the firmware you want to download.
+- **Step 1.** the process is the same as **A. Boot from SD card** if you first start up the ODYSSEY – STM32MP157C.
 
-- **Step 1.** Go to`STM32MP1` folder to select the firmware you want to download.
+- **Step 2.** Edit /boot/uEnv.txt to start eMMC boot then reboot.
 
-- **Step 2.** Connect an SD card to a PC or MAC with an SD card reader, an SD card with more than 4G memory is required.
+```bash
+sudo echo cmdline=init=/opt/scripts/tools/eMMC/init-eMMC-flasher-v3-stm32mp1.sh >> /boot/uEnv.txt
+sudo reboot
+```
+- **Step 3.** Wait for the USER LED bright continuously.that indicate the eMMC boot successfully if the USER LED bright continuously.
 
-- **Step 3.** <font face="">Click here to download <a href="https://etcher.io/">Etcher</a>, then use the Etcher to write the  ```*.img.xz``` file directly to the SD card. Or extract the ```*.img.xz``` file into a ```*.img``` file, and then burn it to an SD card using another mirror write tool. 
-<br>
-<br>Click the plus icon to add the newly downloaded image file, and the software will automatically select the SD card you inserted. Then click Flash! Start writing. Takes about 10 minutes to complete.</font>
-
-![](https://github.com/SeeedDocument/Respeaker_V2/raw/master/img/v2-flash-sd.png)
-
-- **Step 4.** After writing the image to the SD card, insert the SD card into ODYSSEY – STM32MP157C. use USB type-c port to power the motherboard, do not take out the SD card during writing. ODYSSEY – STM32MP157C will start from the SD card, and you can see the PWR and USER LED light up.
-
-- **Step 5.** Set the slide switch to eMMC and restart.
+- **Step 4.** Set the slide switch to EMMC and restart.
 
 **Serial Console**
 
@@ -191,7 +189,7 @@ Now your ODYSSEY – STM32MP157C is up, you may want to access your Linux system
 
 - **Step 2.** Check whether the computer serial port is enabled:
 
-    - Windows : Check the device manager, there should be a new serial device named ```COMx```, x is a bigger and bigger number. If you are using Windows XP/7/8, you may need to install [windows CDC driver](https://github.com/respeaker/get_started_with_respeaker/blob/master/files/ReSpeaker_Gadget_CDC_driver.7z).
+    - Windows : Check the device manager, there should be a new serial device named ```COMx```, x is a bigger and bigger number. If you can not recognizes the driver you can visit [link](https://beagleboard.org/getting-started#troubleshooting) to install the driver.
     - Linux : ls ```/dev/ttyACM*```, should be ```/dev/ttyACMx``` x depends on the USB port you use.
     - Mac : ls ```/dev/cu.usb*```, should be ```/dev/cu.usbmodem14xx``` xx depends on the USB port you use.
 
@@ -209,7 +207,7 @@ Now your ODYSSEY – STM32MP157C is up, you may want to access your Linux system
 
 In this section, we'll walk you through the use of the USB to TTL adapter, which connects to the ODYSSEY – STM32MP157C's Uart port(Located at the upper right of ODYSSEY – STM32MP157C), to establish a connection between your computer and ODYSSEY -STM32MP157C.
 
-- **Step 1.** Connect Uart port To PC/Mac using USB To TTL Adapter. Note: The voltage of RX/TX is 3.3v. If you don't have USB To TTL Adapter, click [HERE](https://item.taobao.com/item.htm?id=550981934087) to buy.（RX->TX,TX->RX）
+- **Step 1.** Connect Uart port To PC/Mac using USB To TTL Adapter.If you don't have USB To TTL Adapter, click [HERE](https://www.seeedstudio.com/catalogsearch/result/?q=UART) to buy.（RX->TX,TX->RX）
 
 - **Step 2.** Using the following serial debugging tools, the baud rate is 115200:
     - Windows : Use [PUTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html), select ```Serial``` protocol, fill in the COM port corresponding to ODYSSEY -STM32MP157C,```115200``` baud rate, 8 bit, no parity bits, a stop bit 1, no flow control.
@@ -230,7 +228,7 @@ You should get feedback like this:
 /dev/cu.usbmodem14XX where XX will vary depending on which USB port you used (on Mac)
 /dev/ttyACMX where X will vary depending on which USB port you used  (on Linux)
 ```
-Now follow the steps above to connect to ODYSSEY – STM32MP157C via a serial connection. This is usually what we need to do when we first boot up, as you will then set up ODYSSEY – STM32MP157C for Wi-Fi connection and then SSH or VNC connection.
+Now follow the steps above to connect to ODYSSEY – STM32MP157C via a serial connection. This is usually what we need to do when we first boot up, as you will then set up ODYSSEY – STM32MP157C for Wi-Fi connection and then SSH connection.
 
 **Network Settings**
 
